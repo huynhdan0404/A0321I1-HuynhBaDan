@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5fbb458b-d72f-4a1d-a04e-65a94c156828" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Bai4_git_va_html/Thuc_hanh/SuDungTheHTMLCoBan.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bai5_html_form_table/Bai_tap/Tao_form_don_gian/TaoFormDonGian.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bai5_html_form_table/Bai_tap/Tao_form_don_gian/TaoFormĐonGian.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bai5_html_form_table/Thuc_hanh/Tao_mot_form_tim_kiem_gg/TaoMotFormTimKiemGG.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -14,6 +16,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="HTML File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -32,6 +35,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="D:/A0321I1_HuynhBaDan/Modude1" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -53,6 +57,9 @@
       <workItem from="1617366199094" duration="88000" />
       <workItem from="1617546281260" duration="2331000" />
       <workItem from="1617552241968" duration="1349000" />
+      <workItem from="1617622009518" duration="4949000" />
+      <workItem from="1617777990990" duration="1982000" />
+      <workItem from="1617791137607" duration="10106000" />
     </task>
     <servers />
   </component>
