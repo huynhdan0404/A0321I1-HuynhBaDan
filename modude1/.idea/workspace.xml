@@ -2,10 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5fbb458b-d72f-4a1d-a04e-65a94c156828" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Bai5_html_form_table/Bai_tap/Tao_form_don_gian/TaoFormDonGian.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Bai5_html_form_table/Bai_tap/Tao_form_don_gian/TaoFormĐonGian.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Bai5_html_form_table/Thuc_hanh/Tao_mot_form_tim_kiem_gg/TaoMotFormTimKiemGG.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bai5_html_form_table/Bai_tap/Tao_form_don_gian/TaoFormDonGian.html" beforeDir="false" afterPath="$PROJECT_DIR$/Bai5_html_form_table/Bai_tap/Tao_form_don_gian/TaoFormDonGian.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bai5_html_form_table/Bai_tap/Tao_form_don_gian/TaoFormĐonGian.css" beforeDir="false" afterPath="$PROJECT_DIR$/Bai5_html_form_table/Bai_tap/Tao_form_don_gian/TaoFormĐonGian.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,6 +59,7 @@
       <workItem from="1617622009518" duration="4949000" />
       <workItem from="1617777990990" duration="1982000" />
       <workItem from="1617791137607" duration="10106000" />
+      <workItem from="1617806627722" duration="3736000" />
     </task>
     <servers />
   </component>
