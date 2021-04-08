@@ -2,9 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5fbb458b-d72f-4a1d-a04e-65a94c156828" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Bai5_html_form_table/Bai_tap/Tao_ban_co_vua/TaoBanCoVua.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bai5_html_form_table/Bai_tap/Tao_ban_co_vua/TaoBanCoVua.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bai5_html_form_table/Bai_tap/Tao_bang_don_gian/TaoBangDonGian.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bai5_html_form_table/Bai_tap/Tao_bang_don_gian/TaoBangDonGian.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bai5_html_form_table/Bai_tap/Tao_form_don_gian/DangKiHocVien.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bai5_html_form_table/Bai_tap/Tao_form_don_gian/DangKiHocVien.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bai5_html_form_table/Bai_tap/Tao_form_lay_survey_khach_hang/TaoFormLaySurveyKhachHang.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bai5_html_form_table/Bai_tap/Tao_form_lay_survey_khach_hang/TaoFormLaySurveyKhachHang.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bai5_html_form_table/Bai_tap/Tao_giao_dien_form_dang_ky_nguoi_dung/TaoGiaoDienFormDangKyNguoiDung.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bai5_html_form_table/Bai_tap/Tao_giao_dien_form_dang_ky_nguoi_dung/TaoGiaoDienFormDangKyNguoiDung.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bai5_html_form_table/Thuc_hanh/Tao_Bang_Co_Ban/TaoBangCoBan.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bai5_html_form_table/Thuc_hanh/Tao_Bang_Co_Ban/TaoBangCoBan.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bai5_html_form_table/Thuc_hanh/Tao_bang_nang_cao/TaoBangNangCao.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bai5_html_form_table/Thuc_hanh/Tao_bang_nang_cao/TaoBangNangCao.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bai5_html_form_table/Bai_tap/Tao_form_don_gian/TaoFormDonGian.html" beforeDir="false" afterPath="$PROJECT_DIR$/Bai5_html_form_table/Bai_tap/Tao_form_don_gian/TaoFormDonGian.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bai5_html_form_table/Bai_tap/Tao_form_don_gian/TaoFormĐonGian.css" beforeDir="false" afterPath="$PROJECT_DIR$/Bai5_html_form_table/Bai_tap/Tao_form_don_gian/TaoFormĐonGian.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bai5_html_form_table/Bai_tap/Tao_form_don_gian/TaoFormDonGian.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bai5_html_form_table/Bai_tap/Tao_form_don_gian/TaoFormĐonGian.css" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,7 +73,8 @@
       <workItem from="1617622009518" duration="4949000" />
       <workItem from="1617777990990" duration="1982000" />
       <workItem from="1617791137607" duration="10106000" />
-      <workItem from="1617806627722" duration="3736000" />
+      <workItem from="1617806627722" duration="5799000" />
+      <workItem from="1617857148473" duration="17994000" />
     </task>
     <servers />
   </component>

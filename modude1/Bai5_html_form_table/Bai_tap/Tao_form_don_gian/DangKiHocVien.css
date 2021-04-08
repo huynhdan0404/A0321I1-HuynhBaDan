@@ -1,0 +1,14 @@
+div {
+    width: 400px;
+    background-color: #FFFDA9;
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1 {
+    background-color: aqua;
+    color: blue;
+    margin: 3px;
+    font-weight: 500;
+}
+td {
+    padding: 5px 40px 5px 10px;
+}
