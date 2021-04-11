@@ -2,23 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5fbb458b-d72f-4a1d-a04e-65a94c156828" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Bai5_html_form_table/Bai_tap/Tao_ban_co_vua/TaoBanCoVua.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Bai5_html_form_table/Bai_tap/Tao_ban_co_vua/TaoBanCoVua.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Bai5_html_form_table/Bai_tap/Tao_bang_don_gian/TaoBangDonGian.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Bai5_html_form_table/Bai_tap/Tao_bang_don_gian/TaoBangDonGian.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Bai5_html_form_table/Bai_tap/Tao_form_don_gian/DangKiHocVien.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Bai5_html_form_table/Bai_tap/Tao_form_don_gian/DangKiHocVien.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Bai5_html_form_table/Bai_tap/Tao_form_lay_survey_khach_hang/TaoFormLaySurveyKhachHang.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Bai5_html_form_table/Bai_tap/Tao_form_lay_survey_khach_hang/TaoFormLaySurveyKhachHang.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Bai5_html_form_table/Bai_tap/Tao_giao_dien_form_dang_ky_nguoi_dung/TaoGiaoDienFormDangKyNguoiDung.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Bai5_html_form_table/Bai_tap/Tao_giao_dien_form_dang_ky_nguoi_dung/TaoGiaoDienFormDangKyNguoiDung.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Bai5_html_form_table/Thuc_hanh/Tao_Bang_Co_Ban/TaoBangCoBan.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Bai5_html_form_table/Thuc_hanh/Tao_Bang_Co_Ban/TaoBangCoBan.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Bai5_html_form_table/Thuc_hanh/Tao_bang_nang_cao/TaoBangNangCao.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Bai5_html_form_table/Thuc_hanh/Tao_bang_nang_cao/TaoBangNangCao.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bai7_bien_kieu_du_lieu_va_toan_tu/Bai_tap/Bien_kieu_du_lieu_va_toan_tu/BienKieuDuLieuVaToanTu.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bai7_bien_kieu_du_lieu_va_toan_tu/Bai_tap/Bien_kieu_du_lieu_va_toan_tu/BienKieuDuLieuVaToanTu.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bai7_bien_kieu_du_lieu_va_toan_tu/Bai_tap/Ung_dung_chuyen_doi_tien_te/UngDungChuyenDoiTienTe.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bai7_bien_kieu_du_lieu_va_toan_tu/Bai_tap/Ung_dung_chuyen_doi_tien_te/UngDungChuyenDoiTienTe.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bai7_bien_kieu_du_lieu_va_toan_tu/Bai_tap/Ung_dung_chuyen_doi_tien_te/UngDungChuyenDoiTienTe.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bai7_bien_kieu_du_lieu_va_toan_tu/Bai_tap/Ung_dung_may_tinh/UngDungMayTinh.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bai7_bien_kieu_du_lieu_va_toan_tu/Bai_tap/Ung_dung_may_tinh/UngDungMayTinh.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bai7_bien_kieu_du_lieu_va_toan_tu/Thuc_hanh/KhaiBaoVaSuDungBien.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bai7_bien_kieu_du_lieu_va_toan_tu/Thuc_hanh/Su_dung_toan_tu/SuDungToanTu.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bai7_bien_kieu_du_lieu_va_toan_tu/Thuc_hanh/Su_dung_toan_tu/SuDungToanTu.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bai5_html_form_table/Bai_tap/Tao_form_don_gian/TaoFormDonGian.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bai5_html_form_table/Bai_tap/Tao_form_don_gian/TaoFormĐonGian.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bai5_html_form_table/Bai_tap/Tao_ban_co_vua/TaoBanCoVua.css" beforeDir="false" afterPath="$PROJECT_DIR$/Bai5_html_form_table/Bai_tap/Tao_ban_co_vua/TaoBanCoVua.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bai5_html_form_table/Bai_tap/Tao_ban_co_vua/TaoBanCoVua.html" beforeDir="false" afterPath="$PROJECT_DIR$/Bai5_html_form_table/Bai_tap/Tao_ban_co_vua/TaoBanCoVua.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,6 +26,7 @@
       <list>
         <option value="HTML File" />
         <option value="CSS File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -75,6 +72,10 @@
       <workItem from="1617791137607" duration="10106000" />
       <workItem from="1617806627722" duration="5799000" />
       <workItem from="1617857148473" duration="17994000" />
+      <workItem from="1617903132479" duration="33000" />
+      <workItem from="1617903613516" duration="961000" />
+      <workItem from="1617966243909" duration="9880000" />
+      <workItem from="1617987301281" duration="9731000" />
     </task>
     <servers />
   </component>
@@ -86,6 +87,10 @@
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="489" y="236" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.864@0.0.1536.864" timestamp="1617552706652" />
+    <state x="860" y="180" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1617995885722">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="860" y="180" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.864@0.0.1536.864" timestamp="1617995885722" />
     <state x="549" y="188" key="FileChooserDialogImpl" timestamp="1617023733516">
       <screen x="0" y="0" width="1536" height="864" />
     </state>

@@ -1,0 +1,24 @@
+div {
+    float: left;
+    padding: 0 30px;
+}
+button{
+    width: 100px;
+    background-color: #272882;
+    padding: 5px;
+    margin: 20px;
+}
+.amount {
+    text-align: center;
+}
+#amount {
+    height: 25px;
+}
+#fcurrency {
+    width: 100px;
+    height: 30px;
+}
+#tcurrency {
+    width: 100px;
+    height: 30px;
+}

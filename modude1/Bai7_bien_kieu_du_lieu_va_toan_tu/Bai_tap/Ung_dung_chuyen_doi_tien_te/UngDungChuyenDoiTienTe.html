@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="UngDungChuyenDoiTienTe.css">
+    <title>ung dung chuyen doi tien te</title>
+</head>
+<body>
+    <form action="">
+        <div class="amount">
+            <label for="amount" ><b>Amount</b></label><br>
+            <input type="number" id="amount" name="amount">
+        </div>
+
+        <div>
+            <label for="fcurrency"><b>Form Currency</b></label><br>
+            <select id="fcurrency">
+                <option value="vn">Vietnam</option>
+                <option value="usd">USD</option>
+            </select>
+        </div>
+
+        <div>
+            <label for="tcurrency" ><b>To Currency</b></label><br>
+            <select name="" id="tcurrency">
+                <option value="usd">USD</option>
+                <option value="vn">Vietnam</option>
+            </select>
+        </div>
+
+        <button type="button" onclick="convert()">Convert</button>
+        <p id="kq"></p>
+    </form>
+
+</body>
+</html>
+<script src="UngDungChuyenDoiTienTe.js">
+
+</script>
