@@ -1,5 +1,12 @@
+table, th, td {
+    border-spacing: 0px;
+}
 td {
     padding: 30px;
+}
+th {
+    padding: 30px;
+    background-color: #FFB300;
 }
 .row1 td:nth-child(even) {
     background-color: black;

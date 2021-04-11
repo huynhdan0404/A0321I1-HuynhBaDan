@@ -1,0 +1,45 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1 {
+    text-align: center;
+    color: blue;
+}
+table {
+    width: 100%;
+}
+table, th, td {
+    text-align: center;
+    border-collapse: collapse;
+    padding: 25px;
+    font-size: 25px;
+}
+th {
+    background-color: #FFB300;
+    border-right:3px  solid white ;
+    color: white;
+}
+td {
+    border: 3px solid #B7B7B7;
+}
+.a td {
+    border-top: none;
+    border-left: none  ;
+    border-right: none;
+}
+tr th:nth-child(1) {
+    background-color: red;
+}
+tr th:nth-child(7) {
+    background-color: blue;
+}
+td:nth-child(1) {
+    color: red;
+}
+td:nth-child(7) {
+    color: blue;
+}
+span {
+    color: black;
+    vertical-align: -5px;
+}

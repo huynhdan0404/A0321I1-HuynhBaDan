@@ -2,19 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5fbb458b-d72f-4a1d-a04e-65a94c156828" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Bai7_bien_kieu_du_lieu_va_toan_tu/Bai_tap/Bien_kieu_du_lieu_va_toan_tu/BienKieuDuLieuVaToanTu.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Bai7_bien_kieu_du_lieu_va_toan_tu/Bai_tap/Bien_kieu_du_lieu_va_toan_tu/BienKieuDuLieuVaToanTu.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Bai7_bien_kieu_du_lieu_va_toan_tu/Bai_tap/Ung_dung_chuyen_doi_tien_te/UngDungChuyenDoiTienTe.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Bai7_bien_kieu_du_lieu_va_toan_tu/Bai_tap/Ung_dung_chuyen_doi_tien_te/UngDungChuyenDoiTienTe.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Bai7_bien_kieu_du_lieu_va_toan_tu/Bai_tap/Ung_dung_chuyen_doi_tien_te/UngDungChuyenDoiTienTe.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Bai7_bien_kieu_du_lieu_va_toan_tu/Bai_tap/Ung_dung_may_tinh/UngDungMayTinh.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Bai7_bien_kieu_du_lieu_va_toan_tu/Bai_tap/Ung_dung_may_tinh/UngDungMayTinh.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Bai7_bien_kieu_du_lieu_va_toan_tu/Thuc_hanh/KhaiBaoVaSuDungBien.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Bai7_bien_kieu_du_lieu_va_toan_tu/Thuc_hanh/Su_dung_toan_tu/SuDungToanTu.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Bai7_bien_kieu_du_lieu_va_toan_tu/Thuc_hanh/Su_dung_toan_tu/SuDungToanTu.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bai5_html_form_table/Bai_tap/Tạo_lich/TaoLich.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bai5_html_form_table/Bai_tap/Tạo_lich/TaoLich.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Bai5_html_form_table/Bai_tap/Tao_ban_co_vua/TaoBanCoVua.css" beforeDir="false" afterPath="$PROJECT_DIR$/Bai5_html_form_table/Bai_tap/Tao_ban_co_vua/TaoBanCoVua.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Bai5_html_form_table/Bai_tap/Tao_ban_co_vua/TaoBanCoVua.html" beforeDir="false" afterPath="$PROJECT_DIR$/Bai5_html_form_table/Bai_tap/Tao_ban_co_vua/TaoBanCoVua.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bai7_bien_kieu_du_lieu_va_toan_tu/Bai_tap/Ung_dung_may_tinh/UngDungMayTinh.html" beforeDir="false" afterPath="$PROJECT_DIR$/Bai7_bien_kieu_du_lieu_va_toan_tu/Bai_tap/Ung_dung_may_tinh/UngDungMayTinh.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bai7_bien_kieu_du_lieu_va_toan_tu/Bai_tap/Ung_dung_may_tinh/UngDungMayTinh.js" beforeDir="false" afterPath="$PROJECT_DIR$/Bai7_bien_kieu_du_lieu_va_toan_tu/Bai_tap/Ung_dung_may_tinh/UngDungMayTinh.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,9 +18,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="JavaScript File" />
         <option value="HTML File" />
         <option value="CSS File" />
-        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -76,6 +70,7 @@
       <workItem from="1617903613516" duration="961000" />
       <workItem from="1617966243909" duration="9880000" />
       <workItem from="1617987301281" duration="9731000" />
+      <workItem from="1618144856899" duration="5899000" />
     </task>
     <servers />
   </component>
@@ -83,6 +78,10 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="447" y="88" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1618150432110">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="447" y="88" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.864@0.0.1536.864" timestamp="1618150432110" />
     <state x="489" y="236" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1617552706652">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
