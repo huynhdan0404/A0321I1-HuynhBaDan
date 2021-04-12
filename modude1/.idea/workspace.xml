@@ -2,13 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5fbb458b-d72f-4a1d-a04e-65a94c156828" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Bai5_html_form_table/Bai_tap/Tạo_lich/TaoLich.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Bai5_html_form_table/Bai_tap/Tạo_lich/TaoLich.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bai6_tong_quan_javascript/Thuc_hanh/HienThiDauRaBai2.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bai6_tong_quan_javascript/Thuc_hanh/HienThiDauRaBai3.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bai6_tong_quan_javascript/Thuc_hanh/HienThiDauRaBai4.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bai5_html_form_table/Bai_tap/Tao_ban_co_vua/TaoBanCoVua.css" beforeDir="false" afterPath="$PROJECT_DIR$/Bai5_html_form_table/Bai_tap/Tao_ban_co_vua/TaoBanCoVua.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bai5_html_form_table/Bai_tap/Tao_ban_co_vua/TaoBanCoVua.html" beforeDir="false" afterPath="$PROJECT_DIR$/Bai5_html_form_table/Bai_tap/Tao_ban_co_vua/TaoBanCoVua.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bai7_bien_kieu_du_lieu_va_toan_tu/Bai_tap/Ung_dung_may_tinh/UngDungMayTinh.html" beforeDir="false" afterPath="$PROJECT_DIR$/Bai7_bien_kieu_du_lieu_va_toan_tu/Bai_tap/Ung_dung_may_tinh/UngDungMayTinh.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bai7_bien_kieu_du_lieu_va_toan_tu/Bai_tap/Ung_dung_may_tinh/UngDungMayTinh.js" beforeDir="false" afterPath="$PROJECT_DIR$/Bai7_bien_kieu_du_lieu_va_toan_tu/Bai_tap/Ung_dung_may_tinh/UngDungMayTinh.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bai7_bien_kieu_du_lieu_va_toan_tu/Bai_tap/Ung_dung_chuyen_doi_tien_te/UngDungChuyenDoiTienTe.css" beforeDir="false" afterPath="$PROJECT_DIR$/Bai7_bien_kieu_du_lieu_va_toan_tu/Bai_tap/Ung_dung_chuyen_doi_tien_te/UngDungChuyenDoiTienTe.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bai7_bien_kieu_du_lieu_va_toan_tu/Bai_tap/Ung_dung_chuyen_doi_tien_te/UngDungChuyenDoiTienTe.js" beforeDir="false" afterPath="$PROJECT_DIR$/Bai7_bien_kieu_du_lieu_va_toan_tu/Bai_tap/Ung_dung_chuyen_doi_tien_te/UngDungChuyenDoiTienTe.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,8 +18,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="JavaScript File" />
-        <option value="HTML File" />
         <option value="CSS File" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -70,7 +69,9 @@
       <workItem from="1617903613516" duration="961000" />
       <workItem from="1617966243909" duration="9880000" />
       <workItem from="1617987301281" duration="9731000" />
-      <workItem from="1618144856899" duration="5899000" />
+      <workItem from="1618144856899" duration="6449000" />
+      <workItem from="1618154280644" duration="1937000" />
+      <workItem from="1618223392174" duration="2177000" />
     </task>
     <servers />
   </component>
