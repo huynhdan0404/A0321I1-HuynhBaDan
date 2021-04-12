@@ -2,11 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5fbb458b-d72f-4a1d-a04e-65a94c156828" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Bai6_tong_quan_javascript/Thuc_hanh/HienThiDauRaBai2.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Bai6_tong_quan_javascript/Thuc_hanh/HienThiDauRaBai3.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Bai6_tong_quan_javascript/Thuc_hanh/HienThiDauRaBai4.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bai8_cau_truc_dieu_kien_1/Thuc_hanh/Kiem_tra_nam_nhuan/KiemTraNamNhuan.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bai7_bien_kieu_du_lieu_va_toan_tu/Bai_tap/Ung_dung_chuyen_doi_tien_te/UngDungChuyenDoiTienTe.css" beforeDir="false" afterPath="$PROJECT_DIR$/Bai7_bien_kieu_du_lieu_va_toan_tu/Bai_tap/Ung_dung_chuyen_doi_tien_te/UngDungChuyenDoiTienTe.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bai7_bien_kieu_du_lieu_va_toan_tu/Bai_tap/Ung_dung_chuyen_doi_tien_te/UngDungChuyenDoiTienTe.html" beforeDir="false" afterPath="$PROJECT_DIR$/Bai7_bien_kieu_du_lieu_va_toan_tu/Bai_tap/Ung_dung_chuyen_doi_tien_te/UngDungChuyenDoiTienTe.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Bai7_bien_kieu_du_lieu_va_toan_tu/Bai_tap/Ung_dung_chuyen_doi_tien_te/UngDungChuyenDoiTienTe.js" beforeDir="false" afterPath="$PROJECT_DIR$/Bai7_bien_kieu_du_lieu_va_toan_tu/Bai_tap/Ung_dung_chuyen_doi_tien_te/UngDungChuyenDoiTienTe.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -71,7 +69,8 @@
       <workItem from="1617987301281" duration="9731000" />
       <workItem from="1618144856899" duration="6449000" />
       <workItem from="1618154280644" duration="1937000" />
-      <workItem from="1618223392174" duration="2177000" />
+      <workItem from="1618223392174" duration="6244000" />
+      <workItem from="1618239874612" duration="4267000" />
     </task>
     <servers />
   </component>
@@ -79,10 +78,10 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="447" y="88" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1618150432110">
+    <state x="447" y="88" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1618230112593">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="447" y="88" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.864@0.0.1536.864" timestamp="1618150432110" />
+    <state x="447" y="88" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.864@0.0.1536.864" timestamp="1618230112593" />
     <state x="489" y="236" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1617552706652">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
