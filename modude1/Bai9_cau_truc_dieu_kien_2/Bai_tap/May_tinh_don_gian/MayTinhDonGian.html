@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>may tinh don gian</title>
+    <style>
+        div {
+            text-align: center;
+            width: 320px;
+            border: 5px solid black;
+        }
+         input {
+            width: 290px;
+            height: 30px;
+            margin: 10px;
+            padding: 5px;
+            border: 1px solid #B7B7B7;
+            color: blue;
+            font-size: 25px;
+            text-align: right;
+        }
+        button {
+            width: 50px;
+            height: 50px;
+            margin: 10px;
+            background: #fff;
+            color: blue;
+            font-size: 25px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <input type="text" id="display">
+        <button type="button" value="1" onclick="display.value += this.value">1</button>
+        <button type="button" value="2" onclick="display.value += this.value">2</button>
+        <button type="button" value="3" onclick="display.value += this.value">3</button>
+        <button type="button" value="+" onclick="display.value += this.value">+</button>
+        <br>
+        <button type="button" value="4" onclick="display.value += this.value">4</button>
+        <button type="button" value="5" onclick="display.value += this.value">5</button>
+        <button type="button" value="6" onclick="display.value += this.value">6</button>
+        <button type="button" value="-" onclick="display.value += this.value">-</button>
+        <br>
+        <button type="button" value="7" onclick="display.value += this.value">7</button>
+        <button type="button" value="8" onclick="display.value += this.value">8</button>
+        <button type="button" value="9" onclick="display.value += this.value">9</button>
+        <button type="button" value="*" onclick="display.value += this.value">x</button>
+        <br>
+        <button type="button" value="c" onclick="display.value = display.value.substr(1,display.value.length-1)">c</button>
+        <button type="button" value="0" onclick="display.value += this.value">0</button>
+        <button type="button" value="=" onclick="display.value = eval(display.value)">=</button>
+        <button type="button" value="/" onclick="display.value += this.value">/</button>
+    </div>
+</body>
+</html>
+<script>
+</script>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tinh so ngay trong thang</title>
+</head>
+<body>
+    <form>
+        <input type="number" id="date">
+        <button onclick="cal()">Tính số ngày</button>
+    </form>
+    <p id="kq"></p>
+</body>
+</html>
+<script>
+    function cal() {
+        let  day = document.getElementById('date').value;
+        switch (day) {
+            case '1':
+            case '3':
+            case '5':
+            case '7':
+            case '8':
+                document.getElementById('kq').innerHTML = 'thang ' + day + ' co 31 ngay';
+                break;
+            case '4':
+            case '6':
+            case '9':
+            case '11':
+                document.getElementById('kq').innerHTML = 'thang ' + day + ' co 30 ngay';
+                break;
+            default:
+                document.getElementById('kq').innerHTML = 'thang 2 co 28 hoac 29 ngay';
+        }
+    }
+</script>
