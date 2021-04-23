@@ -13,14 +13,14 @@
     </style>
 </head>
 <body>
-    <div onclick="check()">
-        <img src='' alt="" id="anh1" onclick="image1()">
-        <img src='' alt="" id="anh2" onclick="image2()">
-        <img src='' alt="" id="anh3" onclick="image3()">
-        <img src='' alt="" id="anh4" onclick="image4()">
-        <img src='' alt="" id="anh5" onclick="image5()">
-    </div>
-    <p id="aa">dasdad</p>
+<div onclick="check()">
+    <img src='' alt="" id="anh1" onclick="image1()">
+    <img src='' alt="" id="anh2" onclick="image2()">
+    <img src='' alt="" id="anh3" onclick="image3()">
+    <img src='' alt="" id="anh4" onclick="image4()">
+    <img src='' alt="" id="anh5" onclick="image5()">
+</div>
+<p id="display"></p>
 </body>
 </html>
 <script>
@@ -29,67 +29,77 @@
     var c = Math.floor(Math.random() * 3);
     var d = Math.floor(Math.random() * 3);
     var e = Math.floor(Math.random() * 3);
-    var img1 = ['Img/meo1.jpg','Img/gau1.jpg','Img/khi1.jpg'];
-    var img2 = ['Img/meo2.jpg','Img/gau2.jpg','Img/khi2.jpg'];
-    var img3 = ['Img/meo3.jpg','Img/gau3.jpg','Img/khi3.jpg'];
-    var img4 = ['Img/meo4.jpg','Img/gau4.jpg','Img/khi4.jpg'];
-    var img5 = ['Img/meo5.jpg','Img/gau5.jpg','Img/khi5.jpg'];
+    var img1 = ['Img/meo1.jpg', 'Img/gau1.jpg', 'Img/khi1.jpg'];
+    var img2 = ['Img/meo2.jpg', 'Img/gau2.jpg', 'Img/khi2.jpg'];
+    var img3 = ['Img/meo3.jpg', 'Img/gau3.jpg', 'Img/khi3.jpg'];
+    var img4 = ['Img/meo4.jpg', 'Img/gau4.jpg', 'Img/khi4.jpg'];
+    var img5 = ['Img/meo5.jpg', 'Img/gau5.jpg', 'Img/khi5.jpg'];
     document.getElementById('anh1').src = img1[a];
     document.getElementById('anh2').src = img2[b];
     document.getElementById('anh3').src = img3[c];
     document.getElementById('anh4').src = img4[d];
     document.getElementById('anh5').src = img5[e];
+
     function image1() {
         document.getElementById('anh1').src = img1[a];
         a++;
-        if(a == 3) {
+        if (a == 3) {
             a = 0;
         }
     }
+
     function image2() {
         document.getElementById('anh2').src = img2[b];
         b++;
-        if(b == 3) {
+        if (b == 3) {
             b = 0;
         }
     }
+
     function image3() {
         document.getElementById('anh3').src = img3[c];
         c++;
-        if(c == 3) {
+        if (c == 3) {
             c = 0;
         }
     }
+
     function image4() {
         document.getElementById('anh4').src = img4[d];
         d++;
-        if(d == 3) {
+        if (d == 3) {
             d = 0;
         }
     }
+
     function image5() {
         document.getElementById('anh5').src = img5[e];
         e++;
-        if(e == 3) {
+        if (e == 3) {
             e = 0;
         }
     }
+
     function check() {
-        if(
-            (document.getElementById('anh1').src === 'Img/meo1.jpg'
-            && document.getElementById('anh2').src === 'Img/meo2.jpg'
-            && document.getElementById('anh3').src === 'Img/meo3.jpg'
-            && document.getElementById('anh4').src === 'Img/meo4.jpg'
-            && document.getElementById('anh5').src === 'Img/meo5.jpg')
-            // || (
-            //     document.getElementById('anh1').src === 'Img/gau1.jpg'
-            //     && document.getElementById('anh2').src === 'Img/gau2.jpg'
-            //     && document.getElementById('anh3').src === 'Img/gau3.jpg'
-            //     && document.getElementById('anh4').src === 'Img/gau4.jpg'
-            //     && document.getElementById('anh5').src === 'Img/gau5.jpg'
-            // )
-        ){
-            document.getElementById('aa').innerText = 'ok';
+        let meo = document.getElementById('anh1').getAttribute("src") === 'Img/meo1.jpg'
+            && document.getElementById('anh2').getAttribute("src") === 'Img/meo2.jpg'
+            && document.getElementById('anh3').getAttribute("src") === 'Img/meo3.jpg'
+            && document.getElementById('anh4').getAttribute("src") === 'Img/meo4.jpg'
+            && document.getElementById('anh5').getAttribute("src") === 'Img/meo5.jpg';
+
+        let gau = document.getElementById('anh1').getAttribute("src") === 'Img/gau1.jpg'
+            && document.getElementById('anh2').getAttribute("src") === 'Img/gau2.jpg'
+            && document.getElementById('anh3').getAttribute("src") === 'Img/gau3.jpg'
+            && document.getElementById('anh4').getAttribute("src") === 'Img/gau4.jpg'
+            && document.getElementById('anh5').getAttribute("src") === 'Img/gau5.jpg';
+
+        let khi = document.getElementById('anh1').getAttribute("src") === 'Img/khi1.jpg'
+            && document.getElementById('anh2').getAttribute("src") === 'Img/khi2.jpg'
+            && document.getElementById('anh3').getAttribute("src") === 'Img/khi3.jpg'
+            && document.getElementById('anh4').getAttribute("src") === 'Img/khi4.jpg'
+            && document.getElementById('anh5').getAttribute("src") === 'Img/khi5.jpg';
+        if (meo || khi ||gau) {
+            alert('ok');
         }
     }
 </script>

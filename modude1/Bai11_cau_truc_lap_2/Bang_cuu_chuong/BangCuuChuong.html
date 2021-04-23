@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <Script>
+        let multab = "<table border = '1' width = '100%' cellspacing = '2' cellpadding = '5'";
+        for (i = 1;i < 10;i++ ) {
+            multab = multab + "<tr>";
+            for (j = 2;j < 10;j++){
+                multab = multab + "<td>" + j + "x" + i + "=" + i*j + "</td>";
+            }
+            multab = multab + "</tr>";
+        }
+        multab = multab + "</table>";
+        document.write(multab)
+    </Script>
+</body>
+</html>

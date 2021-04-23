@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        var numbers = 20;
+        var count = 0;
+        var N = 3;
+        while (count < numbers) {
+            for (i = 2; i < N; i++){
+                if (N % i == 0) {
+                    N++;
+                } else {
+                    document.write(N);
+                    N++;
+                    count++
+                }
+            }
+        }
+    </script>
+</body>
+</html>

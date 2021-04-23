@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        var a = parseInt(prompt('nhap a'));
+        var b = parseInt(prompt('nhap b'));
+        var c = parseInt(prompt('nhap c'));
+        var x = a > 0 && b > 0 && c >0;
+        var y = a + b > c && a + c > b && b + c > a;
+        if (x && y) {
+            alert(' là cạnh của một tam giác');
+        } else {
+            alert(' không phải là cạnh của một tam giác');
+        }
+    </script>
+</body>
+</html>

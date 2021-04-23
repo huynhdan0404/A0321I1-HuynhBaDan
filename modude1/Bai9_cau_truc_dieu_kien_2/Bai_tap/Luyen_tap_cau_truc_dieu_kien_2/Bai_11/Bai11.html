@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        var x = parseInt(prompt('nhap tiền lương của bạn'));
+        if (x <= 5000000) {
+            document.write('Thuế TNCN: ' + x * 5 / 100 + 'VND');
+        }else if (x > 5000000 && x <= 10000000) {
+            document.write('Thuế TNCN: ' + x * 10 / 100 + 'VND');
+        }else if (x >10000000 && x < 18000000) {
+            document.write('Thuế TNCN: ' + x * 15 / 100 + 'VND');
+        }else {
+            document.write('Thuế TNCN: ' + x * 20 / 100 + 'VND');
+        }
+    </script>
+</body>
+</html>

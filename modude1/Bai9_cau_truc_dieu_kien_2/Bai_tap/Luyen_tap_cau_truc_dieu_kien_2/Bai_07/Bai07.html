@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        var a = parseInt(prompt('nhap a'));
+        var b = parseInt(prompt('nhap b'));
+        var c = parseInt(prompt('nhap c'));
+        var d = b * b - 4 * a * c;
+        if (d > 0) {
+            document.write('x1 = ' + (-b - Math.sqrt(d)) / (2 * a));
+            document.write('<br>');
+            document.write('x2 = ' + (-b + Math.sqrt(d)) / (2 * a));
+        } else if (d = 0) {
+            document.write('x1 = x2 = ' + (-b) / (2 * a));
+        }else {
+            document.write('pt vô nghiệm');
+        }
+    </script>
+</body>
+</html>
