@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        var x = 0;
+        var y = 1;
+        var kq;
+        var numbers = 20;
+        var count = 1;
+        var sum = 0;
+        while (count < numbers){
+            kq = x + y;
+            sum = sum + kq;
+            x = y;
+            y = kq;
+            count++;
+        }
+        document.write(sum)
+    </script>
+</body>
+</html>

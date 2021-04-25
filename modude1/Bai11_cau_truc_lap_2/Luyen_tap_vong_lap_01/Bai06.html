@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        var numbers = 30;
+        var count = 0;
+        var n = 7;
+        var sum = 0;
+        while (count < numbers){
+            if (n % 7 == 0) {
+                sum = sum + n;
+                count++;
+                n++;
+            }else {
+                n++;
+            }
+        }
+        document.write('tổng = ' + sum)
+    </script>
+</body>
+</html>

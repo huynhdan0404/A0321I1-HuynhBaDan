@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        var x = 0;
+        var y = 1;
+        var kq;
+        while (1 > 0){
+            kq = x + y;
+            // document.write(kq + '<br>');
+            if (kq % 5 == 0) {
+                document.write('số fibonacci đầu tiên chia hết cho 5 là: ' + kq);
+                break;
+            }else {
+                x = y;
+                y = kq;
+            }
+        }
+    </script>
+</body>
+</html>

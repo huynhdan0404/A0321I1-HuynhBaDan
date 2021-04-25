@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <button type="submit" onclick="play()">chơi</button>
+    <p id="display"></p>
+    <script>
+        function play() {
+            var x = parseInt(prompt('bạn hãy nhập khoảng mong muốn từ số!'))
+            var y = parseInt(prompt('đến'))
+            while(y < x) {
+               y = parseInt(prompt('đến'))
+            }
+            let n = Math.floor(Math.random() * y) + x;
+            let ktr = parseInt(prompt('số bạn đoán!'))
+            if(ktr == n) {
+                document.getElementById('display').innerHTML = 'xin chúc mừng bạn';
+            } else if (ktr < n) {
+                document.getElementById('display').innerHTML = 'máy chọn số: ' + n + '<br>' + 'xin chia buồn. Số bạn đoán nhỏ hơn  ' + n;
+            }else if (ktr > n) {
+                document.getElementById('display').innerHTML = 'máy chọn số: ' + n + '<br>' + 'xin chia buồn. Số bạn đoán lớn hơn  ' + n;
+            }
+        }
+    </script>
+</body>
+</html>
