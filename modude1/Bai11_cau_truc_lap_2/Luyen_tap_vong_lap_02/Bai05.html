@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        let a = parseInt(prompt('nhap số tiền cần vay'));
+        while (a <= 0) {
+            a = parseInt(prompt('nhap số tiền cần vay'));
+        }
+        alert('hạng vay sẽ là 24 tháng, lãi suất hàng tháng là 5%');
+        let interest = Math.floor(a * 5 / 100);
+        let principal = Math.floor(a / 24);
+        let x = 1;
+       do {
+           document.write('tiền lãi tháng ' + x + ' = ' + interest + 'VND' + '<br>' + 'tiền gốc tháng ' + x + ' = ' + principal + 'VND' + '<br>')
+           interest = Math.floor((a - principal) * 5 / 100);
+           principal = Math.round(principal + (a / 24));
+           x++;
+       }while (x <= 24)
+    </script>
+</body>
+</html>
