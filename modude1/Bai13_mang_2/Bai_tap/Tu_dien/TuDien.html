@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        var english = ['go','live','like'];
+        var tv = ['đi','sống','thích'];
+        var search = prompt('nhập từ cần tra');
+        if (english.indexOf(search) !== -1) {
+            alert(tv[english.indexOf(search)])
+        } else if (tv.indexOf(search) !== -1){
+            alert(english[tv.indexOf(search)])
+        }
+        else {
+            alert('danh sách chưa có từ này')
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        var UPPER = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+        var LOWER = 'abcdefghijklmnopqrstuvwxyz';
+        var result = [];
+        var x = prompt('nhap gi do!');
+        for (i = 0; i < x.length; i++){
+            if(UPPER.indexOf(x[i]) !== -1) {
+                result.push(x[i].toLowerCase());
+            }else if (LOWER.indexOf(x[i]) !== -1) {
+                result.push(x[i].toUpperCase());
+            } else {
+                result.push(x[i]);
+            }
+        }
+        document.write(result.join(''))
+    </script>
+</body>
+</html>
