@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        var x = [];
+        var y = [];
+        var c = []
+        while (x.length < 5) {
+            a = parseInt(prompt('nhập phần tử cho mảng x'));
+            x.push(a);
+        }
+
+        while (y.length < 5) {
+            b = parseInt(prompt('nhập phần tử cho mảng y'));
+            y.push(b);
+        }
+
+        c = x.concat(y);
+        document.write(c);
+    </script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        x = [];
+        while (x.length < 10) {
+            a = parseInt(prompt('nhập phần tử cho mảng x'));
+            x.push(a);
+        }
+        y = parseInt(prompt('nhập V'));
+        if (x.indexOf(y) != -1) {
+            x.splice(x.indexOf(y), 1);
+            document.write(x)
+        } else {
+            alert(y + ' không nằm trong mảng x');
+        }
+    </script>
+</body>
+</html>

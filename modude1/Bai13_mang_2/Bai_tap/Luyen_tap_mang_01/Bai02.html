@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        var x = [4,10,45,55,6,88,195,2,78,65];
+        var y = 0;
+        for (a of x) {
+            if (a > y) {
+                y = a;
+            }
+        }
+        alert('số lơn nhất là ' + y + ' nằm ở vị trí số ' + x.indexOf(y));
+    </script>
+</body>
+</html>
