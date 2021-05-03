@@ -6,16 +6,13 @@
 </head>
 <body>
     <script>
-        let value = prompt("Enter a number: ");
+        let value = parseInt(prompt("Enter a number: "));
         let numbers = [-3, 5, 1, 3, 2, 10];
-        for (let i = 0; i < numbers.length; i++) {
-            if (value == numbers[i]) {
-                alert("Value " + numbers[i] + "found at " + i);
-            }else {
-                alert('please re-enter')
-            }
+        if (numbers.indexOf(value) != -1) {
+            alert("Value " + value + " found at " + numbers.indexOf(value));
+        }else {
+            alert('không có số này');
         }
-
     </script>
 </body>
 </html>
