@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <input type="number" oninput="increase(this.value)">
+
+    <p id="display"></p>
+
+    <script>
+       function increase(x) {
+            document.getElementById("display").innerHTML = x + 1;
+       }
+    </script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <p>
+        <label for="foot">Foot</label>
+        <input type="number" id="foot" oninput="changeFoot(this.value)">
+    </p>
+
+    <p>
+        <label for="meters">Meters</label>
+        <input type="number" id="meters" oninput="changeMeters(this.value)">
+    </p>
+
+    <script>
+        function changeFoot(x) {
+            document.getElementById("meters").value = x * 0.305;
+        }
+
+        function changeMeters(x) {
+            document.getElementById("foot").value = x * 3.279;
+        }
+    </script>
+</body>
+</html>

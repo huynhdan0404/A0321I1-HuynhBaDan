@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <button type="submit" onclick="search()">search</button>
+    <script>
+        var variables = ['Polaris', 'Aldebaran', 'Deneb', 'Vega', 'Altair', 'Dubhe', 'Regulus'];
+        var stars = ['Ursa Minor', 'Tarurus', 'Cygnus, Lyra', 'Aquila', 'Ursa Major', 'Leo'];
+        function search() {
+            var x = prompt('nhập tên ngôi sao bạn muốn tìm');
+            if (variables.indexOf(x) != -1) {
+                alert(stars[variables.indexOf(x)]);
+            } else {
+                alert('không tìm thấy tên ngôi sao của bạn');
+            }
+        }
+        
+    </script>
+</body>
+</html>
