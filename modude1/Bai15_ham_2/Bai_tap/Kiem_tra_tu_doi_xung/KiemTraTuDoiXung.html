@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        function isPalindrome() {
+            var x = prompt('nhap 1 tu');
+            var check = false;
+            for (i=0;i< (x.length/2);i++){
+                if (x[i] === x[x.length - (i+1)]) {
+                    check = true;
+                } else {
+                    check = false;
+                    break
+                }
+            }
+            alert(check);
+        }
+        isPalindrome()
+    </script>
+</body>
+</html>
