@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        function ktr() {
+            var numbers = [];
+            for (i = 0;i<3;i++){
+                var x = prompt('nhap 1 số');
+                numbers.push(x);
+            }
+            var check = numbers[0];
+            for (y of numbers){
+                if (y < check) {
+                    check = y;
+                }
+            }
+            alert(check);
+        }
+        ktr()
+    </script>
+</body>
+</html>

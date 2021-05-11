@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        function check() {
+            var newAray = ['e','3','t','4','3','e','t','e'];
+            var a = prompt('nhap');
+            var kq = 0;
+            if (newAray.indexOf(a) != (-1)){
+                for (x of newAray) {
+                    if (a == x) {
+                        kq += 1
+                    }
+                }
+                alert(kq)
+            }else {
+                alert('-1')
+            }
+        }
+        check()
+    </script>
+</body>
+</html>
