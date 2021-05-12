@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>Quản lý sản phẩm</h1>
+<input type="text" placeholder="nhập tên SP" id="name">
+<input type="button" onclick="addNewProduct()" value="Add"><br>
+<span> Số lượng sản phẩm</span>
+<span id="soLuong"></span>
+<p id="hienThi"></p>
+<script>
+    let listProduct =[];
+    display(listProduct);
+    function addNewProduct() {
+        let newName = document.getElementById("name").value;
+        if(newName!=""){
+            listProduct.push(newName);
+        }else {
+            alert('nhập tên sản phầm');
+        };
+         document.getElementById("name").value="";
+        display(listProduct);
+    }
+    function display(list){
+        let tableString ='<table border="1">\n' +
+            '    <tr>\n' +
+            '        <th>STT</th>' +
+            '        <th>TênSP</th>' +
+            '        <th>Sửa</th>' +
+            '        <th>Xóa</th>' +
+            '    </tr>';
+        for (let i=0; i<list.length;i++){
+            tableString +='<tr>\n' +
+                '        <td>'+(i+1)+'</td>\n' +
+                '        <td>'+list[i]+'</td>\n' +
+                '        <td><input type="button" onclick="editProduct('+i+')" value="Sửa"></td>\n' +
+                '        <td><input type="button" onclick="deleteProduct('+i+')" value="Xóa"></td>\n' +
+                '    </tr>'
+        }
+        tableString+='<table>';
+        document.getElementById("hienThi").innerHTML =tableString;
+        document.getElementById("soLuong").innerHTML =list.length;
+    }
+    function editProduct(index) {
+        let editName= prompt("nhập vào tên SP cần sửa");
+        if(editName!=""&&editName!=null){
+            listProduct[index]= editName;
+        }
+        display(listProduct)
+    }
+    function deleteProduct(index) {
+        let conf = confirm("Bạn có muốn xóa sản phẩm "+ listProduct[index]);
+        if(conf){
+            listProduct.splice(index,1);
+        }else {
+            alert("ban không muốn xóa");
+        }
+        display(listProduct);
+    }
+</script>
+</body>
+</html>
