@@ -6,13 +6,15 @@
 </head>
 <body>
 <script>
-    var x = prompt('nhap x');
-    var y = prompt('nhap y');
     function change (a,b) {
-        [a,b] = [b,a]
-        document.write(a + b);
+        var c = a[0];
+        a[0] = b[0];
+        b[0] = c;
     }
+    var x = [1];
+    var y = [2];
     change(x,y)
+    document.write(x,y)
 </script>
 </body>
 </html>
