@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        class Rectangle {
+            constructor(length, width) {
+                this.length = length;
+                this.width = width;
+            }
+            getLength() {
+                return this.length;
+            };
+            setLength(newLength){
+                this.length = newLength;
+            };
+            getWidth(){
+                return this.width;
+            };
+            setWidth(newWidth){
+                this.width = newWidth;
+            }
+            getArea(){
+                return this.width * this.length;
+            }
+        };
+        let a = new Rectangle(4,5);
+        document.write(a.getLength())
+        document.write(a.getArea());
+        a.setLength(10);
+        a.setWidth(5);
+        document.write(a.getArea())
+    </script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        class Temperature {
+            constructor(x) {
+                this.x = x;
+            };
+            getTemperature(){
+                return this.x;
+            };
+            getChangef(){
+                return this.x * 9.5 + 32;
+            };
+            getChageKenvin(){
+                return this.x + 273;
+            };
+        };
+        let a = new Temperature(25);
+        document.write(a.getChangef() + 'F / ' + a.getChageKenvin() + 'K');
+
+    </script>
+</body>
+</html>
