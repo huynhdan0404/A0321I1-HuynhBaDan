@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        class Apple{
+            constructor() {
+                this.wight = 10;
+            };
+            getWight(){
+                return this.wight;
+            };
+            setWight(){
+                this.wight--;
+            };
+        };
+
+        class Human{
+            constructor(name, gender, wight) {
+                this.name = name;
+                this.gender = gender;
+                this.wight = wight;
+            };
+            getName(){
+                return this.name;
+            };
+            getGender(){
+                return this.gender;
+            };
+            getwight(){
+                return this.wight;
+            };
+            setWight(){
+                this.wight = this.wight;
+            }
+            talk(){
+                document.write('tôi muốn ăn táo' + '<br>');
+            };
+            eatApple(){
+                    document.write('ăn' + '<br>');
+                    this.wight++;
+            };
+        };
+
+        let apple = new Apple();
+        document.write('táo nặng : ' + apple.wight + '<br>')
+        let human = new Human(' nam ','nam', 20);
+        human.talk();
+        if (apple.wight > 0) {
+            human.eatApple();
+            apple.setWight();
+        }
+        document.write('cân nặng của ' + human.getName() + human.getwight() + '<br>');
+        document.write('táo nặng: ' + apple.getWight())
+    </script>
+</body>
+</html>
