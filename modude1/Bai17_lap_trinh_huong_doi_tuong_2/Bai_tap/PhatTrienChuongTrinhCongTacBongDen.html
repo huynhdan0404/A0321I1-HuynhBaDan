@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    class Switch {
+        constructor() {
+        };
+        switchOn(){
+            this.status = true;
+        }
+        switchOff(){
+            this.status = false;
+        }
+        switchButton(){
+            if (this.status){
+                return 'bật';
+            } else {
+                return 'tắt';
+            }
+        }
+    }
+
+    class ElectricLamp {
+        constructor() {
+        }
+        electriclamp(switchs){
+            if(switchs.switchButton() == 'bật') {
+                alert('sáng đèn')
+            }else {
+                alert('đèn tắt');
+            }
+        }
+    }
+    let switchs = new Switch()
+    let electricLamp = new ElectricLamp();
+    switchs.switchOn();
+    // switchs.switchButton()
+    electricLamp.electriclamp(switchs);
+
+    switchs.switchOff();
+    // switchs.switchButton()
+    electricLamp.electriclamp(switchs);
+
+</script>
+</body>
+</html>

@@ -13,7 +13,7 @@
             getWight(){
                 return this.wight;
             };
-            setWight(){
+            reduceWight(){
                 this.wight--;
             };
         };
@@ -36,24 +36,29 @@
             setWight(){
                 this.wight = this.wight;
             }
-            talk(){
+            say(){
                 document.write('tôi muốn ăn táo' + '<br>');
             };
-            eatApple(){
+            eatApple(apple){
+                if (apple.getWight() > 0)
                     document.write('ăn' + '<br>');
                     this.wight++;
+                    apple.reduceWight();
             };
         };
 
         let apple = new Apple();
         document.write('táo nặng : ' + apple.wight + '<br>')
-        let human = new Human(' nam ','nam', 20);
-        human.talk();
-        if (apple.wight > 0) {
-            human.eatApple();
-            apple.setWight();
-        }
-        document.write('cân nặng của ' + human.getName() + human.getwight() + '<br>');
+        let adam = new Human(' adam ','male', 50);
+        adam.say();
+        adam.eatApple(apple)
+        document.write('cân nặng của adam: ' + adam.getName() + adam.getwight() + '<br>');
+        document.write('táo nặng: ' + apple.getWight() + '<br>')
+
+        let eva = new Human(' eva ', 'female ', 30)
+        eva.say();
+        eva.eatApple(apple)
+        document.write('cân nặng của eva: ' + eva.getName() + eva.getwight() + '<br>');
         document.write('táo nặng: ' + apple.getWight())
     </script>
 </body>
