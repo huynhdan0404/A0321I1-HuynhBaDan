@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    var x = parseInt(prompt('nhâp h'));
+    for (i = 0;i < x;i++){
+        for (j = 1;j <= (x + i);j++){
+            if (j == (x-i)||j == (x+i)||i == (x-1)){
+                document.write('*');
+            }else {
+                document.write('&nbsp&nbsp')
+            }
+        }
+        document.write('<br>')
+    }
+</script>
+</body>
+</html>
