@@ -8,23 +8,41 @@
 <table>
     <tr>
         <td>cafe</td>
-        <td><button>chọn</button></td>
+        <td><button onclick="amount('cafe')">chọn</button></td>
     </tr>
 
     <tr>
         <td>cam</td>
-        <td><button>chọn</button></td>
+        <td><button onclick="amount('cam')">chọn</button></td>
     </tr>
 
     <tr>
         <td>dừa</td>
-        <td><button>chọn</button></td>
+        <td><button onclick="amount('dừa')">chọn</button></td>
+    </tr>
+
+    <tr>
+        <td><button onclick="amount('xong')">xong</button></td>
     </tr>
 </table>
 <script>
-    var beverage = ['cafe','cam','dừa'];
-    var price = [15,20,35];
-
+    var end = 0;
+    function amount(x) {
+        if (x == 'cafe'){
+            var a = parseInt(prompt('nhập số ly cafe'));
+            end += (a * 10000);
+        }else if (x == 'cam'){
+            var b = parseInt(prompt('nhập số ly cafe'));
+            end += (b * 15000);
+        }else if (x == 'dừa'){
+            var c = parseInt(prompt('nhập số ly cafe'));
+            end += (c * 20000)
+        }
+        else if(x == 'xong'){
+            alert('tổng tiền: ' + end + ' VND');
+            end = 0;
+        }
+}
 </script>
 </body>
 </html>

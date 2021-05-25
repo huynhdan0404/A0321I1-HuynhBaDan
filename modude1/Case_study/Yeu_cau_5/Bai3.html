@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    var m = parseInt(prompt('nhập m'));
+    var n = parseInt(prompt('nhập n'));
+    var a = [];
+    for (i = 0;i < m;i++){
+        a[i] = [];
+        for (j = 0;j < n;j++){
+            a[i][j] = parseInt(prompt('nhập a [' + i + '] [' + j + ']'));
+        }
+        document.write(a[i].join(' '))
+        document.write('<br>')
+    };
+
+
+    var min = a[0][0];
+    var max = a[0][0];
+    for (var i = 0; i < a.length; i++) {
+        for (var j = 0; j < a[i].length; j++) {
+            if (a[i][j] > max){
+                max = a[i][j];
+            }else if (a[i][j] < min){
+                min = a[i][j];
+            }
+        }
+    }
+    document.write('max = ' + max + '<br>');
+    document.write('min = ' + min);
+</script>
+</body>
+</html>

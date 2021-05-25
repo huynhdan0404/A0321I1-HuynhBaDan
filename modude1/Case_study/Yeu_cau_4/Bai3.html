@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    var a = prompt('nhập kí tự');
+    var b = a.split("");
+    var c = prompt('nhập kí tự');
+    var d = c.split("");
+    var x = [];
+    for (i=0;i<b.length;i++){
+        if (d.indexOf(b[i]) != -1){
+            x.push(b[i]);
+            d.splice(d.indexOf(b[i]),1);
+        }
+    }
+
+    document.write('có ' + x.length + '  kí tự chung: ' + x)
+</script>
+</body>
+</html>

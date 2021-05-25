@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    var a = prompt('nhập một chuỗi');
+    var b = a.split(" ");
+    var c = [];
+    for (i = 0;i < b.length;i++){
+        var x = b[i].charAt(0).toUpperCase() + b[i].slice(1).toLowerCase();
+        c.push(x);
+    }
+
+    document.write(c.join(' '))
+</script>
+</body>
+</html>
