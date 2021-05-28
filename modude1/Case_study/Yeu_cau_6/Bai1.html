@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>Xổ số CodeGym</h1>
+<form>
+   <p>
+       <input type="text" id="number1" size="1" disabled>
+       <input type="text" id="number2" size="1" disabled>
+       <input type="text" id="number3" size="1" disabled>
+       <input type="text" id="number4" size="1" disabled>
+       <input type="text" id="number5" size="1" disabled>
+       <input type="text" id="number6" size="1" disabled>
+   </p>
+    <input type="button" value="mua vé" onclick="chon()">
+    <input type="button" value="xem kết quả" onclick="">
+</form>
+
+<script>
+    // function f(numbers) {
+    //
+    // }
+    function chon() {
+        var x = prompt('bạn có 2 lựa chọn\n ' +
+            '1. bạn muốn tự chọn số \n' +
+            '2. hệ thống random' );
+        if (x == '1'){
+           for (i=1;i<=6;i++){
+               document.getElementById('number' + i).value = prompt('nhập 1 số từ 1- 99');
+           };
+        }else {
+            for (i=1;i<=6;i++){
+                document.getElementById('number' + i).value = Math.floor(Math.random() * 99) + 1;
+            };
+        }
+    }
+   
+</script>
+</body>
+</html>

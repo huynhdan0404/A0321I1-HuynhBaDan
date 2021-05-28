@@ -2,26 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5fbb458b-d72f-4a1d-a04e-65a94c156828" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Bai8_cau_truc_dieu_kien_1/Thuc_hanh/Luyen_tap_voi_cau_truc_if_else_if/LuyenTapVoiCauTrucIfElseIf.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Bai8_cau_truc_dieu_kien_1/Thuc_hanh/Luyen_tap_voi_cau_truc_switch_case/LuyenTapVoiCauTrucSwitchCase.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Bai8_cau_truc_dieu_kien_1/Thuc_hanh/Luyen_tap_voi_cau_truc_switch_case/LuyenTapVoiCauTrucSwitchCase2.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Bai8_cau_truc_dieu_kien_1/Thuc_hanh/Luyen_tap_voi_cau_truc_switch_case/LuyenTapVoiCauTrucSwitchCase3.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Bai8_cau_truc_dieu_kien_1/Thuc_hanh/Luyen_tap_voi_toan_tu_ba_ngoi/LuyenTapVoiToanTuBaNgoi.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Bai9_cau_truc_dieu_kien_2/Bai_tap/Cau_lenh_switch_case/CauLenhSwitchCase.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Bai9_cau_truc_dieu_kien_2/Bai_tap/Game_puzzle/GamePuzzle.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Bai9_cau_truc_dieu_kien_2/Bai_tap/Luyen_tap_cau_truc_dieu_kien_1/Bai_01/Bai01.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Bai9_cau_truc_dieu_kien_2/Bai_tap/Luyen_tap_cau_truc_dieu_kien_1/Bai_02/Bai02.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Bai9_cau_truc_dieu_kien_2/Bai_tap/Luyen_tap_cau_truc_dieu_kien_1/Bai_03/Bai03.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Bai9_cau_truc_dieu_kien_2/Bai_tap/Luyen_tap_cau_truc_dieu_kien_1/Bai_04/Bai04.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Bai9_cau_truc_dieu_kien_2/Bai_tap/Luyen_tap_cau_truc_dieu_kien_1/Bai_05/Bai05.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Bai9_cau_truc_dieu_kien_2/Bai_tap/May_tinh_don_gian/MayTinhDonGian.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Bai9_cau_truc_dieu_kien_2/Bai_tap/Tinh_so_can_nang_cua_co_the/TinhSoCanNangCuaCoThe.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Bai9_cau_truc_dieu_kien_2/Bai_tap/Ung_dung_do_you_love_me/UngDungDoYouLoveMe.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Bai9_cau_truc_dieu_kien_2/Bai_tap/Ung_dung_good_fast_cheap/UngDungGoodCheapFast.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Bai9_cau_truc_dieu_kien_2/Bai_tap/Ung_dung_good_fast_cheap/UngDungGoodFastCheap.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Bai9_cau_truc_dieu_kien_2/Bai_tap/Ung_dung_good_fast_cheap/UngDungGoodFastCheap.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Bai9_cau_truc_dieu_kien_2/Thuc_hanh/Su_kien_ban_phim/SuKienBanPhim.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Bai9_cau_truc_dieu_kien_2/Thuc_hanh/Su_kien_chuot/SuKienChuot.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Case_study/Yeu_cau_6/Bai1.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Case_study/Yeu_cau_6/DeMo.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -110,6 +92,8 @@
       <workItem from="1618665578597" duration="1972000" />
       <workItem from="1618712079403" duration="9976000" />
       <workItem from="1618754769219" duration="200000" />
+      <workItem from="1621999315395" duration="8059000" />
+      <workItem from="1622199470200" duration="2336000" />
     </task>
     <servers />
   </component>
