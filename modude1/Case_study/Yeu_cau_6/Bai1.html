@@ -16,18 +16,15 @@
        <input type="text" id="number6" size="1" disabled>
    </p>
     <input type="button" value="mua vé" onclick="chon()">
-    <input type="button" value="xem kết quả" onclick="">
+    <input type="button" value="xem kết quả" onclick="ketqua()">
 </form>
 
 <script>
-    // function f(numbers) {
-    //
-    // }
     function chon() {
         var x = prompt('bạn có 2 lựa chọn\n ' +
             '1. bạn muốn tự chọn số \n' +
             '2. hệ thống random' );
-        if (x == '1'){
+        if (x === '1'){
            for (i=1;i<=6;i++){
                document.getElementById('number' + i).value = prompt('nhập 1 số từ 1- 99');
            };
@@ -35,8 +32,35 @@
             for (i=1;i<=6;i++){
                 document.getElementById('number' + i).value = Math.floor(Math.random() * 99) + 1;
             };
-        }
-    }
+        };
+    };
+
+
+    function ketqua() {
+         var check = [1,25,35,45,55,65];
+         var count = 0;
+        for (j = 6;j > 0;j--){
+           if ( document.getElementById('number' + j).value === check[j]) {
+               count++;
+           }else {
+               break;
+           }
+        };
+
+        switch (count) {
+            case 6:
+                alert('bạn đã trúng giải nhất');
+                break;
+            case 5:
+                alert('bạn đã trúng giải nhì');
+                break;
+            case 0:
+                alert('bạn đã trúng giải ba');
+                break;
+            default:
+                alert('chúc bạn may mắn lần sau');
+        };
+    };
    
 </script>
 </body>

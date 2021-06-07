@@ -14,8 +14,8 @@
         for (j = 0;j < n;j++){
             arr[i][j] = parseInt(prompt('nhập a [' + i + '] [' + j + ']'));
         }
-        document.write(arr[i].join(' '))
-        document.write('<br>')
+        document.write(arr[i].join(' '));
+        document.write('<br>');
     };
 
     var check = false;
@@ -33,14 +33,13 @@
                 }else {
                     check = true;
                 }
-
             }
             if (check){
                 kq.push(arr[i][j]);
             }
         }
     }
-    document.write(kq);
+    alert(kq.length + ' số nguyên tố');
 </script>
 </body>
 </html>
