@@ -2,10 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5fbb458b-d72f-4a1d-a04e-65a94c156828" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Case_study/Yeu_cau_6/demo.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Case_study/Yeu_cau_5/Bai2.html" beforeDir="false" afterPath="$PROJECT_DIR$/Case_study/Yeu_cau_5/Bai2.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Case_study/Mang_va_loop/Bai2.html" beforeDir="false" afterPath="$PROJECT_DIR$/Case_study/Mang_va_loop/Bai2.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Case_study/Yeu_cau_4/Bai1.html" beforeDir="false" afterPath="$PROJECT_DIR$/Case_study/Yeu_cau_4/Bai1.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Case_study/Yeu_cau_4/Bai2.html" beforeDir="false" afterPath="$PROJECT_DIR$/Case_study/Yeu_cau_4/Bai2.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Case_study/Yeu_cau_4/Bai3.html" beforeDir="false" afterPath="$PROJECT_DIR$/Case_study/Yeu_cau_4/Bai3.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Case_study/Yeu_cau_6/Bai1.html" beforeDir="false" afterPath="$PROJECT_DIR$/Case_study/Yeu_cau_6/Bai1.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Case_study/Yeu_cau_6/DeMo.html" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,6 +26,9 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Case_study/Yeu_cau_6/Bai1.html" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="ProjectId" id="1qQtQHfVyvqb8QCRlHdwxBOefX8" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -102,6 +108,9 @@
       <workItem from="1622986898756" duration="664000" />
       <workItem from="1622988952473" duration="1881000" />
       <workItem from="1623046946551" duration="4016000" />
+      <workItem from="1623053348998" duration="283000" />
+      <workItem from="1623061335755" duration="13743000" />
+      <workItem from="1623118292124" duration="6875000" />
     </task>
     <servers />
   </component>

@@ -28,7 +28,7 @@
            for (i=1;i<=6;i++){
                document.getElementById('number' + i).value = prompt('nhập 1 số từ 1- 99');
            };
-        }else {
+        }else if(x === '2'){
             for (i=1;i<=6;i++){
                 document.getElementById('number' + i).value = Math.floor(Math.random() * 99) + 1;
             };
@@ -37,11 +37,11 @@
 
 
     function ketqua() {
-         var check = [1,25,35,45,55,65];
+         var check = [1,2,3,4,5,6];
          var count = 0;
-        for (j = 6;j > 0;j--){
-           if ( document.getElementById('number' + j).value === check[j]) {
-               count++;
+        for (j=6;j>0;j--){
+           if ( parseInt(document.getElementById('number' + (j)).value) === check[j-1]){
+                count++;
            }else {
                break;
            }
@@ -54,7 +54,7 @@
             case 5:
                 alert('bạn đã trúng giải nhì');
                 break;
-            case 0:
+            case 4:
                 alert('bạn đã trúng giải ba');
                 break;
             default:

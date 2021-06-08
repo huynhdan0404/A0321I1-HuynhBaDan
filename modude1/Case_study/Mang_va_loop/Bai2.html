@@ -7,14 +7,16 @@
 <body>
 <script>
     var a = [1,7,4,5,8];
-    var b = [1,2,3,4,5,6];
+    var b = [1,2,3,4,5,10];
     var c = [];
     for (x of b){
         if (a.indexOf(x) == -1){
             c.push(x);
         }
     }
-    document.write(c.sort());
+    document.write(c.sort(function (a,b) {
+            return a-b;
+    }));
 </script>
 </body>
 </html>

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>Xổ số CodeGym</h1>
+<p id="hienthi"></p>
+<input type="button" value="mua vé" onclick="muave()">
+<input type="button" value="xem kết quả" onclick="kiemtra()">
+<p id="ketqua"></p>
+<script>
+    class Veso {
+       constructor(so1,so2,so3,so4,so5,so6) {
+           this.so1 = so1;
+           this.so2 = so2;
+           this.so3 = so3;
+           this.so4 = so4;
+           this.so5 = so5;
+           this.so6 = so6;
+       }
+       setSo1(newSo1){
+           this.so1 = newSo1;
+       };
+       getS01(){
+           return this.so1;
+       };
+
+        setSo2(newSo2){
+            this.so2 = newSo2;
+        };
+        getS02(){
+            return this.so2;
+        };
+
+        setSo3(newSo3){
+            this.so3 = newSo3;
+        };
+        getS03(){
+            return this.so3;
+        };
+
+        setSo4(newSo4){
+            this.so4 = newSo4;
+        };
+        getS04(){
+            return this.so4;
+        };
+
+        setSo5(newSo5){
+            this.so5 = newSo5;
+        };
+        getS05(){
+            return this.so5;
+        };
+
+        setSo6(newSo6){
+            this.so6 = newSo6;
+        };
+        getS06(){
+            return this.so6;
+        };
+
+        getSO(){
+            return [this.so1,this.so2,this.so3,this.so4,this.so5,this.so6];
+        }
+        getRandom(){
+            this.setSo1(Math.floor(Math.random() * 99) + 1);
+            this.setSo2(Math.floor(Math.random() * 99) + 1);
+            this.setSo3(Math.floor(Math.random() * 99) + 1);
+            this.setSo4(Math.floor(Math.random() * 99) + 1);
+            this.setSo5(Math.floor(Math.random() * 99) + 1);
+            this.setSo6(Math.floor(Math.random() * 99) + 1);
+        };
+    };
+
+    var solanmua = [];
+    function muave() {
+        let chon;
+        if (solanmua.length < 4){
+            chon = prompt('bạn có 2 lựa chọn\n ' +
+                '1. bạn muốn tự chọn số \n' +
+                '2. hệ thống random' );
+        }else {
+            alert('bạn chỉ được mua 4 vé');
+        }
+        if(chon === '2'){
+            random();
+        }else if (chon === '1'){
+            tunhap();
+        }
+    }
+
+    function hienthi(arr) {
+        let str = "";
+        for (let i = 0;i < arr.length;i++){
+            str += "<input size=\"1\" value='" + arr[i].getS01() + "' disabled>" +
+                    "<input size=\"1\" value='" + arr[i].getS02() + "' disabled>" +
+                    "<input size=\"1\" value='" + arr[i].getS03() + "' disabled>" +
+                    "<input size=\"1\" value='" + arr[i].getS04() + "' disabled>" +
+                    "<input size=\"1\" value='" + arr[i].getS05() + "' disabled>" +
+                    "<input size=\"1\" value='" + arr[i].getS06() + "' disabled>" + '<br>'
+        };
+        document.getElementById('hienthi').innerHTML = str;
+    };
+
+    function random() {
+        let veso = new Veso();
+        veso.getRandom();
+        solanmua.push(veso);
+        hienthi(solanmua);
+    };
+
+    function tunhap() {
+        let arr = [];
+        for (let i = 1;i <= 6;i++){
+            arr[i] = parseInt(prompt('nhập số từ 1-99'));
+        };
+        let veso = new Veso(arr[1],arr[2],arr[3],arr[4],arr[5],arr[6]);
+        solanmua.push(veso);
+        hienthi(solanmua);
+    };
+
+    function kiemtra() {
+        let count = 0;
+        let ketqua = [1,2,3,4,5,6];
+        for (let j = 0;j < solanmua.length;j++){
+            for (let i = 5;i >= 0;i--){
+                   if(ketqua[i] === solanmua[j].getSO()[i]){
+                       count++;
+                   }else {
+                       break;
+                   }
+            }
+            switch (count) {
+                case 6:
+                    document.getElementById('ketqua').innerHTML += 'vé ' + (j + 1) + ' đã trúng giải nhất' + '<br>';
+                    break;
+                case 5:
+                    document.getElementById('ketqua').innerHTML += 'vé ' + (j + 1) + ' đã trúng giải nhì' + '<br>';
+                    break;
+                case 4:
+                    document.getElementById('ketqua').innerHTML += 'vé ' + (j + 1) + ' đã trúng giải ba' + '<br>';
+                    break;
+                case 3:
+                    document.getElementById('ketqua').innerHTML += 'vé ' + (j + 1) + ' đã trúng giải khuyến khích' + '<br>';
+                    break;
+                default:
+                    document.getElementById('ketqua').innerHTML += 'vé ' + (j + 1) + ' chúc bạn may mắn lần sau' + '<br>';
+            }
+            count = 0;
+        }
+    }
+</script>
+</body>
+</html>

@@ -6,15 +6,24 @@
 </head>
 <body>
 <script>
-    var a = prompt('nhập một chuỗi');
-    var b = a.split(" ");
-    var c = [];
-    for (i = 0;i < b.length;i++){
-        var x = b[i].charAt(0).toUpperCase() + b[i].slice(1).toLowerCase();
-        c.push(x);
-    }
+    // var a = prompt('nhập một chuỗi');
+    // var b = a.split(" ");
+    // var c = [];
+    // for (i = 0;i < b.length;i++){
+    //     var x = b[i].charAt(0).toUpperCase() + b[i].slice(1).toLowerCase();
+    //     c.push(x);
+    // }
+    //
+    // document.write(c.join(' '))
 
-    document.write(c.join(' '))
+        let x = prompt('nhập 1 chuỗi kí tự');
+        let a = x.split(' ');
+        let c = [];
+        for (i=0;i < a.length;i++){
+            let b = a[i].charAt(0).toUpperCase() + a[i].slice(1).toLowerCase();
+            c.push(b)
+        };
+        console.log(c.join(' '));
 </script>
 </body>
 </html>
