@@ -1,9 +1,4 @@
 package Bai_1.Bai_tap;
-
-import com.sun.org.apache.xpath.internal.objects.XString;
-import com.sun.org.apache.xpath.internal.objects.XStringForChars;
-
-import java.sql.SQLOutput;
 import java.util.Scanner;
 
 public class HienThiLoiChao {
