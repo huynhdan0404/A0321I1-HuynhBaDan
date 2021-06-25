@@ -7,6 +7,7 @@ public class GopMang {
         int c[] = new int[a.length + b.length];
         Scanner scanner = new Scanner(System.in);
         int x;
+        int y = 0;
         for (int i = 0;i<a.length;i++){
             System.out.println("nhap phan tu so " + (i+1) + " mang a");
             x = scanner.nextInt();
@@ -20,11 +21,12 @@ public class GopMang {
         }
 
         for (int i=0;i<c.length;i++){
-            if (i < a.length){
+            if (i < a.length) {
                 c[i] = a[i];
+            }else {
+                c[i] = b[y];
+                y++;
             }
-            c[i] = b[i];
-
         }
 
         for (int  j = 0;j<c.length;j++){
