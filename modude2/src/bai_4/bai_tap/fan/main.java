@@ -11,23 +11,24 @@ public class main {
         double radius;
         String color;
         Scanner scanner = new Scanner(System.in);
-        System.out.println("nhap color");
-        color = scanner.nextLine();
 
         System.out.println("nhap on");
-        on = scanner.nextBoolean();
+        on = Boolean.parseBoolean(scanner.nextLine());
 
-        if (on){
+        if (on) {
             System.out.println("nhap speed");
             speed = scanner.nextInt();
             while (speed > 4) {
                 System.out.println("nhap speed");
-                speed = scanner.nextInt();
+                speed = Integer.parseInt(scanner.nextLine());
             }
-        }else speed = 0;
+        } else speed = 0;
 
         System.out.println("nhap radius");
-        radius = scanner.nextDouble();
+        radius = Double.parseDouble(scanner.nextLine());
+
+        System.out.println("nhap color");
+        color = scanner.nextLine();
 
         Fan fan = new Fan(speed, radius, color);
         fan.setSpeed(speed);
