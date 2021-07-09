@@ -39,10 +39,10 @@ public class Point3D extends Point2D {
                 super.toString();
     }
 
-    public static void main(String[] args) {
-        Point2D point3D = new Point3D(5f,5f,5f);
-        System.out.println(point3D);
-//        System.out.println(((Point3D) point3D).getXYZ());
-
-    }
+//    public static void main(String[] args) {
+//        Point2D point3D = new Point3D(5f,5f,5f);
+//        System.out.println(point3D);
+////        System.out.println(((Point3D) point3D).getXYZ());
+//
+//    }
 }

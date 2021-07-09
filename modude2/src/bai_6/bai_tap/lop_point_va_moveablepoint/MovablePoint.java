@@ -58,4 +58,10 @@ public class MovablePoint extends Point {
         super.setXY(super.getX() + getXSpeed(), super.getY() + getYSpeed());
         return this;
     }
+
+//    public static void main(String[] args) {
+//        Point point = new MovablePoint(5f,5f,5f,5f);
+//        System.out.println(point);
+//        System.out.println(((MovablePoint)point).move());
+//    }
 }
