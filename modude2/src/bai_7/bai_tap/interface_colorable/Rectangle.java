@@ -1,8 +1,8 @@
 package bai_7.bai_tap.interface_colorable;
 
-public class Rectangle extends Shape {
-    private double width = 1.0;
-    private double length = 1.0;
+public class Rectangle extends Shape implements Colorable{
+    private double width;
+    private double length;
 
     public Rectangle() {
     }
@@ -39,7 +39,6 @@ public class Rectangle extends Shape {
         this.length = length;
     }
 
-
     public double getPerimeter() {
         return 2 * (width + this.length);
     }
@@ -52,5 +51,10 @@ public class Rectangle extends Shape {
                 + getLength()
                 + ", which is a subclass of "
                 + super.toString();
+    }
+
+    @Override
+    public void howToColor() {
+        System.out.println("Color all four sides..");
     }
 }

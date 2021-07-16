@@ -36,7 +36,5 @@ public abstract class Shape {
                 + " and "
                 + (isFilled() ? "filled " : "not filled ");
     }
-
-
 }
 
