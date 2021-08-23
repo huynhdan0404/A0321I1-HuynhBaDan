@@ -1,21 +1,19 @@
 package case_study.FuramaResort.models;
 
-public abstract class Facility {
+public class Facility {
     private String tenDichvu;
-    private String dienTich;
-    private double chiPhi;
+    private int dienTich;
+    private int chiPhi;
     private int soNguoi;
-    private String kieuThue;
 
     public Facility(){
     }
 
-    public Facility(String tenDichvu, String dienTich, double chiPhi, int soNguoi, String kieuThue) {
+    public Facility(String tenDichvu, int dienTich, int chiPhi, int soNguoi) {
         this.tenDichvu = tenDichvu;
         this.dienTich = dienTich;
         this.chiPhi = chiPhi;
         this.soNguoi = soNguoi;
-        this.kieuThue = kieuThue;
     }
 
     public String getTenDichvu() {
@@ -26,11 +24,11 @@ public abstract class Facility {
         this.tenDichvu = tenDichvu;
     }
 
-    public String getDienTich() {
+    public int getDienTich() {
         return dienTich;
     }
 
-    public void setDienTich(String dienTich) {
+    public void setDienTich(int dienTich) {
         this.dienTich = dienTich;
     }
 
@@ -38,7 +36,7 @@ public abstract class Facility {
         return chiPhi;
     }
 
-    public void setChiPhi(double chiPhi) {
+    public void setChiPhi(int chiPhi) {
         this.chiPhi = chiPhi;
     }
 
@@ -50,11 +48,13 @@ public abstract class Facility {
         this.soNguoi = soNguoi;
     }
 
-    public String getKieuThue() {
-        return kieuThue;
-    }
-
-    public void setKieuThue(String kieuThue) {
-        this.kieuThue = kieuThue;
+    @Override
+    public String toString() {
+        return "Facility{" +
+                "tenDichvu='" + tenDichvu + '\'' +
+                ", dienTich=" + dienTich +
+                ", chiPhi=" + chiPhi +
+                ", soNguoi=" + soNguoi +
+                '}';
     }
 }

@@ -1,35 +1,35 @@
 package case_study.FuramaResort.models;
 
 public class Employee extends Person{
-    private double maNhanVien;
+    private int maNhanVien;
     private String trinhDo;
     private String viTri;
-    private double Luong;
+    private int luong;
 
     public Employee (){
 
     }
 
-    public Employee(double maNhanVien, String trinhDo, String viTri, double luong) {
+    public Employee(int maNhanVien, String trinhDo, String viTri, int luong) {
         this.maNhanVien = maNhanVien;
         this.trinhDo = trinhDo;
         this.viTri = viTri;
-        Luong = luong;
+        this.luong = luong;
     }
 
-    public Employee(String hoTen, int ngaySinh, String gioiTinh, double soCMND, double soSDT, String email, double maNhanVien, String trinhDo, String viTri, double luong) {
+    public Employee(String hoTen, int ngaySinh, String gioiTinh, double soCMND, double soSDT, String email, int maNhanVien, String trinhDo, String viTri, int luong) {
         super(hoTen, ngaySinh, gioiTinh, soCMND, soSDT, email);
         this.maNhanVien = maNhanVien;
         this.trinhDo = trinhDo;
         this.viTri = viTri;
-        Luong = luong;
+        this.luong = luong;
     }
 
     public double getMaNhanVien() {
         return maNhanVien;
     }
 
-    public void setMaNhanVien(double maNhanVien) {
+    public void setMaNhanVien(int maNhanVien) {
         this.maNhanVien = maNhanVien;
     }
 
@@ -50,10 +50,20 @@ public class Employee extends Person{
     }
 
     public double getLuong() {
-        return Luong;
+        return luong;
     }
 
-    public void setLuong(double luong) {
-        Luong = luong;
+    public void setLuong(int luong) {
+        this.luong = luong;
+    }
+
+    @Override
+    public String toString() {
+        return "Employee{" +
+                "maNhanVien=" + maNhanVien +
+                ", trinhDo='" + trinhDo + '\'' +
+                ", viTri='" + viTri + '\'' +
+                ", Luong=" + luong +
+                '}';
     }
 }

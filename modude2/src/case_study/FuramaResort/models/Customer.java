@@ -1,7 +1,7 @@
 package case_study.FuramaResort.models;
 
 public class Customer extends Person{
-    private double maKhachHang;
+    private int maKhachHang;
     private String loaiKhach;
     private String diaChi;
 
@@ -9,13 +9,13 @@ public class Customer extends Person{
 
     }
 
-    public Customer(double maKhachHang, String loaiKhach, String diaChi) {
+    public Customer(int maKhachHang, String loaiKhach, String diaChi) {
         this.maKhachHang = maKhachHang;
         this.loaiKhach = loaiKhach;
         this.diaChi = diaChi;
     }
 
-    public Customer(String hoTen, int ngaySinh, String gioiTinh, double soCMND, double soSDT, String email, double maKhachHang, String loaiKhach, String diaChi) {
+    public Customer(String hoTen, int ngaySinh, String gioiTinh, double soCMND, double soSDT, String email, int maKhachHang, String loaiKhach, String diaChi) {
         super(hoTen, ngaySinh, gioiTinh, soCMND, soSDT, email);
         this.maKhachHang = maKhachHang;
         this.loaiKhach = loaiKhach;
@@ -26,7 +26,7 @@ public class Customer extends Person{
         return maKhachHang;
     }
 
-    public void setMaKhachHang(double maKhachHang) {
+    public void setMaKhachHang(int maKhachHang) {
         this.maKhachHang = maKhachHang;
     }
 
@@ -44,5 +44,14 @@ public class Customer extends Person{
 
     public void setDiaChi(String diaChi) {
         this.diaChi = diaChi;
+    }
+
+    @Override
+    public String toString() {
+        return "Customer{" +
+                "maKhachHang=" + maKhachHang +
+                ", loaiKhach='" + loaiKhach + '\'' +
+                ", diaChi='" + diaChi + '\'' +
+                '}';
     }
 }

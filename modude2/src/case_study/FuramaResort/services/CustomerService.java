@@ -1,4 +1,5 @@
 package case_study.FuramaResort.services;
 
-interface ContractServiceImpl {
+interface CustomerService extends Service{
+
 }

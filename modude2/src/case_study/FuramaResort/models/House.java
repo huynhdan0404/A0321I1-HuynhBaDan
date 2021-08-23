@@ -13,8 +13,8 @@ public class House extends Facility {
         this.soTang = soTang;
     }
 
-    public House(String tenDichvu, String dienTich, double chiPhi, int soNguoi, String kieuThue, int tieuChuanPhong, int soTang) {
-        super(tenDichvu, dienTich, chiPhi, soNguoi, kieuThue);
+    public House(String tenDichvu, int dienTich, int chiPhi, int soNguoi, int tieuChuanPhong, int soTang) {
+        super(tenDichvu, dienTich, chiPhi, soNguoi);
         this.tieuChuanPhong = tieuChuanPhong;
         this.soTang = soTang;
     }
@@ -33,5 +33,13 @@ public class House extends Facility {
 
     public void setSoTang(int soTang) {
         this.soTang = soTang;
+    }
+
+    @Override
+    public String toString() {
+        return "House{" +
+                "tieuChuanPhong=" + tieuChuanPhong +
+                ", soTang=" + soTang +
+                "} " + super.toString();
     }
 }
