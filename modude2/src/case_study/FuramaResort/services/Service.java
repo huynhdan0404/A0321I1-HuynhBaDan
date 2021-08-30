@@ -1,5 +1,9 @@
 package case_study.FuramaResort.services;
 
-interface Service {
+import java.io.IOException;
 
+interface Service {
+    public void addNew();
+
+    public void displayElement() throws IOException;
 }

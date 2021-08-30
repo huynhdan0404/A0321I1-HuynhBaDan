@@ -1,18 +1,18 @@
 package case_study.FuramaResort.models;
 
 public class Booking {
-    private double maBooking;
-    private int ngayBatDau;
-    private int ngayKetThuc;
+    private int maBooking;
+    private String ngayBatDau;
+    private String ngayKetThuc;
     private String tenDichVu;
     private String loaiDichvu;
-    private double maKhachHang;
+    private int maKhachHang;
 
     public Booking() {
 
     }
 
-    public Booking(double maBooking, int ngayBatDau, int ngayKetThuc, String tenDichVu, String loaiDichvu, double maKhachHang) {
+    public Booking(int maBooking, String ngayBatDau, String ngayKetThuc, String tenDichVu, String loaiDichvu, int maKhachHang) {
         this.maBooking = maBooking;
         this.ngayBatDau = ngayBatDau;
         this.ngayKetThuc = ngayKetThuc;
@@ -25,23 +25,23 @@ public class Booking {
         return maBooking;
     }
 
-    public void setMaBooking(double maBooking) {
+    public void setMaBooking(int maBooking) {
         this.maBooking = maBooking;
     }
 
-    public int getNgayBatDau() {
+    public CharSequence getNgayBatDau() {
         return ngayBatDau;
     }
 
-    public void setNgayBatDau(int ngayBatDau) {
+    public void setNgayBatDau(String ngayBatDau) {
         this.ngayBatDau = ngayBatDau;
     }
 
-    public int getNgayKetThuc() {
+    public CharSequence getNgayKetThuc() {
         return ngayKetThuc;
     }
 
-    public void setNgayKetThuc(int ngayKetThuc) {
+    public void setNgayKetThuc(String ngayKetThuc) {
         this.ngayKetThuc = ngayKetThuc;
     }
 
@@ -65,7 +65,19 @@ public class Booking {
         return maKhachHang;
     }
 
-    public void setMaKhachHang(double maKhachHang) {
+    public void setMaKhachHang(int maKhachHang) {
         this.maKhachHang = maKhachHang;
+    }
+
+    @Override
+    public String toString() {
+        return "Booking{" +
+                "maBooking=" + maBooking +
+                ", ngayBatDau='" + ngayBatDau + '\'' +
+                ", ngayKetThuc='" + ngayKetThuc + '\'' +
+                ", tenDichVu='" + tenDichVu + '\'' +
+                ", loaiDichvu='" + loaiDichvu + '\'' +
+                ", maKhachHang=" + maKhachHang +
+                '}';
     }
 }

@@ -2,14 +2,15 @@ package case_study.FuramaResort.models;
 
 public class Contract {
     private int soHopDong;
-    private double maBooking;
-    private double soTienDatCoc;
-    private double tongTien;
-    private double maKhachHang;
+    private int maBooking;
+    private int soTienDatCoc;
+    private int tongTien;
+    private int maKhachHang;
 
-    public Contract(){}
+    public Contract() {
+    }
 
-    public Contract(int soHopDong, double maBooking, double soTienDatCoc, double tongTien, double maKhachHang) {
+    public Contract(int soHopDong, int maBooking, int soTienDatCoc, int tongTien, int maKhachHang) {
         this.soHopDong = soHopDong;
         this.maBooking = maBooking;
         this.soTienDatCoc = soTienDatCoc;
@@ -29,7 +30,7 @@ public class Contract {
         return maBooking;
     }
 
-    public void setMaBooking(double maBooking) {
+    public void setMaBooking(int maBooking) {
         this.maBooking = maBooking;
     }
 
@@ -37,7 +38,7 @@ public class Contract {
         return soTienDatCoc;
     }
 
-    public void setSoTienDatCoc(double soTienDatCoc) {
+    public void setSoTienDatCoc(int soTienDatCoc) {
         this.soTienDatCoc = soTienDatCoc;
     }
 
@@ -45,7 +46,7 @@ public class Contract {
         return tongTien;
     }
 
-    public void setTongTien(double tongTien) {
+    public void setTongTien(int tongTien) {
         this.tongTien = tongTien;
     }
 
@@ -53,7 +54,18 @@ public class Contract {
         return maKhachHang;
     }
 
-    public void setMaKhachHang(double maKhachHang) {
+    public void setMaKhachHang(int maKhachHang) {
         this.maKhachHang = maKhachHang;
+    }
+
+    @Override
+    public String toString() {
+        return "Contract{" +
+                "soHopDong=" + soHopDong +
+                ", maBooking=" + maBooking +
+                ", soTienDatCoc=" + soTienDatCoc +
+                ", tongTien=" + tongTien +
+                ", maKhachHang=" + maKhachHang +
+                '}';
     }
 }

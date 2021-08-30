@@ -8,27 +8,19 @@ import case_study.FuramaResort.models.Villa;
 import java.util.*;
 
 public class FacilityServiceImpl implements FacilityService{
-    private static String tenDichvu;
-    private static int dienTich;
-    private static int chiPhi;
-    private static int soNguoi;
-    private static int tieuChuanPhong;
-    private static int dienTichHoBoi;
-    private static int soTang;
-    private static String dichVuKemTheo;
     private static int choice;
+    private Scanner scanner = new Scanner(System.in);
 
-    private static HashMap<Facility,Integer> facilityList;
-    private static Scanner scanner = new Scanner(System.in);
+    static Map<Facility,Integer> facilityIntegerMap;
 
     static {
-        facilityList = new HashMap<Facility,Integer>();
-        facilityList.put(new Villa("Vila1",200,7000000,4,3,20,1),0);
-        facilityList.put(new House("House1",100,5000000,4,3,1),0);
-        facilityList.put(new Room("Rom1",70,3000000,4,"các dịch vụ kèm theo"),0);
+        facilityIntegerMap = new HashMap<Facility,Integer>();
+        facilityIntegerMap.put(new Villa("Vila1",200,7000000,4,3,20,1),0);
+        facilityIntegerMap.put(new House("House1",100,5000000,4,3,1),0);
+        facilityIntegerMap.put(new Room("Rom1",70,3000000,4,"các dịch vụ kèm theo"),0);
     }
 
-    public static void displayMenuFacility(){
+    public void displayMenuFacility(){
         System.out.println("1. Display list facility");
         System.out.println("2. Add new facility");
         System.out.println("3. Display list facility maintenance");
@@ -38,10 +30,10 @@ public class FacilityServiceImpl implements FacilityService{
 
         switch (choice){
             case 1:
-                displayFacility();
+                displayElement();
                 break;
             case 2:
-                addFacility();
+                addNew();
                 break;
             case 3:
                 facilityMaintenance();
@@ -54,12 +46,15 @@ public class FacilityServiceImpl implements FacilityService{
 
     }
 
-    public static void displayFacility(){
-            for (Facility facility : facilityList.keySet())
-                System.out.println(facility);
+    @Override
+    public void displayElement() {
+        for (Map.Entry entry : facilityIntegerMap.entrySet()){
+            System.out.println(entry);
+        }
     }
 
-    public static void addFacility(){
+    @Override
+    public void addNew() {
         System.out.println("1.Add New Villa");
         System.out.println("2.Add New House");
         System.out.println("3.Add New Room");
@@ -68,90 +63,102 @@ public class FacilityServiceImpl implements FacilityService{
 
         switch (choice){
             case 1:
-                //addVila
-                System.out.println("nhập thông tin");
-                System.out.println("Tên dịch vụ");
-                scanner.nextLine();
-                tenDichvu = scanner.nextLine();
-
-                System.out.println("Diện tích");
-                dienTich = scanner.nextInt();
-
-                System.out.println("Chi phí");
-                chiPhi = scanner.nextInt();
-
-                System.out.println("Số người");
-                soNguoi = scanner.nextInt();
-
-                System.out.println("Tiêu Chuẩn phòng");
-                tieuChuanPhong = scanner.nextInt();
-
-                System.out.println("Diện tích hồ bơi");
-                dienTichHoBoi = scanner.nextInt();
-
-                System.out.println("Số tầng");
-                soTang = scanner.nextInt();
-
-                facilityList.put(new Villa(tenDichvu,dienTich,chiPhi,soNguoi,tieuChuanPhong,dienTichHoBoi,soTang),0);
+                addVila();
                 break;
             case 2:
-                //addHouse
-                System.out.println("nhập thông tin");
-                System.out.println("Tên dịch vụ");
-                scanner.nextLine();
-                tenDichvu = scanner.nextLine();
-
-                System.out.println("Diện tích");
-                dienTich = scanner.nextInt();
-
-                System.out.println("Chi phí");
-                chiPhi = scanner.nextInt();
-
-                System.out.println("Số người");
-                soNguoi = scanner.nextInt();
-
-                System.out.println("Tiêu Chuẩn phòng");
-                tieuChuanPhong = scanner.nextInt();
-
-                System.out.println("Số tầng");
-                soTang = scanner.nextInt();
-
-                facilityList.put(new House(tenDichvu,dienTich,chiPhi,soNguoi,tieuChuanPhong,soTang),0);
+                addHouse();
                 break;
             case 3:
-                //addRoom
-                System.out.println("nhập thông tin");
-                System.out.println("Tên dịch vụ");
-                scanner.nextLine();
-                tenDichvu = scanner.nextLine();
-
-                System.out.println("Diện tích");
-                dienTich = scanner.nextInt();
-
-                System.out.println("Chi phí");
-                chiPhi = scanner.nextInt();
-
-                System.out.println("Số người");
-                soNguoi = scanner.nextInt();
-
-                System.out.println("Dịch vụ kèm theo");
-                scanner.nextLine();
-                dichVuKemTheo = scanner.nextLine();
-
-                facilityList.put(new Room(tenDichvu,dienTich,chiPhi,soNguoi,dichVuKemTheo),0);
+                addRoom();
+                break;
+            case 4:
+                break;
             default:
                 break;
         }
-
     }
 
-    public static void facilityMaintenance(){
-         List<Facility> facilities = new ArrayList<>();
-         for (Facility facility : facilityList.keySet()){
-             for (Integer values : facilityList.values()){
-                 if (values == 5){
-                     facilities.add(facility);
-                 }
+    public void addVila(){
+        Villa villa = new Villa();
+        System.out.println("nhập thông tin");
+        System.out.println("Tên dịch vụ");
+        scanner.nextLine();
+        villa.setTenDichvu(scanner.nextLine());
+
+        System.out.println("Diện tích");
+        villa.setDienTich(scanner.nextInt());
+
+        System.out.println("Chi phí");
+        villa.setChiPhi(scanner.nextInt());
+
+        System.out.println("Số người");
+        villa.setSoNguoi(scanner.nextInt());
+
+        System.out.println("Tiêu Chuẩn phòng");
+        villa.setTieuChuanPhong(scanner.nextInt());
+
+        System.out.println("Diện tích hồ bơi");
+        villa.setDienTichHoBoi(scanner.nextInt());
+
+        System.out.println("Số tầng");
+        villa.setSoTang(scanner.nextInt());
+
+        facilityIntegerMap.put(villa,0);
+    }
+
+    public void addRoom(){
+        Room room = new Room();
+        System.out.println("nhập thông tin");
+        System.out.println("Tên dịch vụ");
+        scanner.nextLine();
+        room.setTenDichvu(scanner.nextLine());
+
+        System.out.println("Dịch vụ kèm theo");
+        room.setDichVuKemTheo(scanner.nextLine());
+
+        System.out.println("Diện tích");
+        room.setDienTich(scanner.nextInt());
+
+        System.out.println("Chi phí");
+        room.setChiPhi(scanner.nextInt());
+
+        System.out.println("Số người");
+        room.setSoNguoi(scanner.nextInt());
+
+        facilityIntegerMap.put(room,0);
+    }
+
+    public void addHouse(){
+        House house = new House();
+        System.out.println("nhập thông tin");
+        System.out.println("Tên dịch vụ");
+        scanner.nextLine();
+        house.setTenDichvu(scanner.nextLine());
+
+        System.out.println("Diện tích");
+        house.setDienTich(scanner.nextInt());
+
+        System.out.println("Chi phí");
+        house.setChiPhi(scanner.nextInt());
+
+        System.out.println("Số người");
+        house.setSoNguoi(scanner.nextInt());
+
+        System.out.println("Tiêu Chuẩn phòng");
+        house.setTieuChuanPhong(scanner.nextInt());
+
+        System.out.println("Số tầng");
+        house.setSoTang(scanner.nextInt());
+
+        facilityIntegerMap.put(house,0);
+    }
+
+    @Override
+    public void facilityMaintenance() {
+        List<Facility> facilityList = new ArrayList<>();
+         for (Map.Entry entry : facilityIntegerMap.entrySet()){
+             if ((int)entry.getValue() == 5){
+                 facilityList.add((Facility) entry.getKey());
              }
          }
     }

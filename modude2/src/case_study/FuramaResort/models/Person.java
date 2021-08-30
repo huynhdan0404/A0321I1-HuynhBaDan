@@ -2,17 +2,17 @@ package case_study.FuramaResort.models;
 
 public abstract class Person {
     private String hoTen;
-    private int ngaySinh;
+    private String ngaySinh;
     private String gioiTinh;
-    private double soCMND;
-    private double soSDT;
+    private int soCMND;
+    private int soSDT;
     private String email;
 
     public Person(){
 
     }
 
-    public Person(String hoTen, int ngaySinh, String gioiTinh, double soCMND, double soSDT, String email) {
+    public Person(String hoTen, String ngaySinh, String gioiTinh, int soCMND, int soSDT, String email) {
         this.hoTen = hoTen;
         this.ngaySinh = ngaySinh;
         this.gioiTinh = gioiTinh;
@@ -29,11 +29,11 @@ public abstract class Person {
         this.hoTen = hoTen;
     }
 
-    public int getNgaySinh() {
+    public String getNgaySinh() {
         return ngaySinh;
     }
 
-    public void setNgaySinh(int ngaySinh) {
+    public void setNgaySinh(String ngaySinh) {
         this.ngaySinh = ngaySinh;
     }
 
@@ -49,7 +49,7 @@ public abstract class Person {
         return soCMND;
     }
 
-    public void setSoCMND(double soCMND) {
+    public void setSoCMND(int soCMND) {
         this.soCMND = soCMND;
     }
 
@@ -57,7 +57,7 @@ public abstract class Person {
         return soSDT;
     }
 
-    public void setSoSDT(double soSDT) {
+    public void setSoSDT(int soSDT) {
         this.soSDT = soSDT;
     }
 
@@ -67,5 +67,17 @@ public abstract class Person {
 
     public void setEmail(String email) {
         this.email = email;
+    }
+
+    @Override
+    public String toString() {
+        return "Person{" +
+                "hoTen='" + hoTen + '\'' +
+                ", ngaySinh='" + ngaySinh + '\'' +
+                ", gioiTinh='" + gioiTinh + '\'' +
+                ", soCMND=" + soCMND +
+                ", soSDT=" + soSDT +
+                ", email='" + email + '\'' +
+                '}';
     }
 }

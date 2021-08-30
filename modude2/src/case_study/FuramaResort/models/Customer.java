@@ -15,7 +15,7 @@ public class Customer extends Person{
         this.diaChi = diaChi;
     }
 
-    public Customer(String hoTen, int ngaySinh, String gioiTinh, double soCMND, double soSDT, String email, int maKhachHang, String loaiKhach, String diaChi) {
+    public Customer(String hoTen, String ngaySinh, String gioiTinh, int soCMND, int soSDT, String email, int maKhachHang, String loaiKhach, String diaChi) {
         super(hoTen, ngaySinh, gioiTinh, soCMND, soSDT, email);
         this.maKhachHang = maKhachHang;
         this.loaiKhach = loaiKhach;
@@ -52,6 +52,6 @@ public class Customer extends Person{
                 "maKhachHang=" + maKhachHang +
                 ", loaiKhach='" + loaiKhach + '\'' +
                 ", diaChi='" + diaChi + '\'' +
-                '}';
+                "} " + super.toString();
     }
 }

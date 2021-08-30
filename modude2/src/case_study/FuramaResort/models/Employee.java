@@ -17,7 +17,7 @@ public class Employee extends Person{
         this.luong = luong;
     }
 
-    public Employee(String hoTen, int ngaySinh, String gioiTinh, double soCMND, double soSDT, String email, int maNhanVien, String trinhDo, String viTri, int luong) {
+    public Employee(String hoTen, String ngaySinh, String gioiTinh, int soCMND, int soSDT, String email, int maNhanVien, String trinhDo, String viTri, int luong) {
         super(hoTen, ngaySinh, gioiTinh, soCMND, soSDT, email);
         this.maNhanVien = maNhanVien;
         this.trinhDo = trinhDo;
