@@ -1,7 +1,9 @@
 package case_study.FuramaResort.services;
 
 import case_study.FuramaResort.models.Customer;
+import case_study.FuramaResort.utils.ReadAndWrite;
 
+import java.io.IOException;
 import java.text.NumberFormat;
 import java.util.ArrayList;
 import java.util.List;
@@ -16,7 +18,7 @@ public class CustomerServiceImpl implements CustomerService{
         customerList = new ArrayList<>();
     }
 
-    public void displayMenuCustomer() {
+    public void displayMenuCustomer() throws IOException {
         System.out.println("1. Display list customers");
         System.out.println("2. Add new customer");
         System.out.println("3. Edit customer");
@@ -45,7 +47,8 @@ public class CustomerServiceImpl implements CustomerService{
     }
 
     @Override
-    public void displayElement() {
+    public void displayElement() throws IOException {
+        customerList = (List<Customer>) ReadAndWrite.read("D:\\A0321I1-HuynhBaDan\\modude2\\src\\case_study\\FuramaResort\\data\\Customer.csv");
         if (customerList.size() == 0) {
             System.out.println("chưa có khách hàng nào, hãy thêm khách hàng của bạn vào");
         } else {
@@ -101,10 +104,12 @@ public class CustomerServiceImpl implements CustomerService{
         }
 
         customerList.add(customer);
+        ReadAndWrite.write(customerList,"D:\\A0321I1-HuynhBaDan\\modude2\\src\\case_study\\FuramaResort\\data\\Customer.csv");
     }
 
     @Override
-    public void exitCustomer() {
+    public void exitCustomer() throws IOException {
+        customerList = (List<Customer>) ReadAndWrite.read("D:\\A0321I1-HuynhBaDan\\modude2\\src\\case_study\\FuramaResort\\data\\Customer.csv");
         for (Customer customer : customerList){
             System.out.println(customer);
         }
@@ -123,5 +128,6 @@ public class CustomerServiceImpl implements CustomerService{
                 }
             }
         }
+        ReadAndWrite.write(customerList,"D:\\A0321I1-HuynhBaDan\\modude2\\src\\case_study\\FuramaResort\\data\\Customer.csv");
     }
 }

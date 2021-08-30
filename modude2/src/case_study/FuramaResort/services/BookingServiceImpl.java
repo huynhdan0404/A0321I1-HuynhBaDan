@@ -4,7 +4,10 @@ import case_study.FuramaResort.controllers.FuramaController;
 import case_study.FuramaResort.models.Booking;
 import case_study.FuramaResort.models.Customer;
 import case_study.FuramaResort.models.Facility;
+import case_study.FuramaResort.utils.ReadAndWrite;
+import case_study.FuramaResort.utils.ReadAndWriteMap;
 
+import java.io.IOException;
 import java.util.*;
 
 public class BookingServiceImpl implements BookingService{
@@ -16,7 +19,7 @@ public class BookingServiceImpl implements BookingService{
         return bookingSet;
     }
     @Override
-    public void addNew() {
+    public void addNew() throws IOException {
         Booking booking = new Booking();
 
         booking.setMaKhachHang(chooseCustomer());
@@ -39,8 +42,10 @@ public class BookingServiceImpl implements BookingService{
 
 
         bookingSet.add(booking);
+        ReadAndWrite.write(bookingSet,"D:\\A0321I1-HuynhBaDan\\modude2\\src\\case_study\\FuramaResort\\data\\Booking.csv");
 
         //số lần sử dụng của dịch vụ tăng 1
+        FacilityServiceImpl.facilityIntegerMap = (Map<Facility, Integer>) ReadAndWriteMap.read("D:\\A0321I1-HuynhBaDan\\modude2\\src\\case_study\\FuramaResort\\data\\Facility.csv");
         for (Map.Entry<Facility,Integer> facilityIntegerEntry : FacilityServiceImpl.facilityIntegerMap.entrySet()){
             if (facilityIntegerEntry.getKey().getTenDichvu().equals(tenDichVu)){
                FacilityServiceImpl.facilityIntegerMap.put(facilityIntegerEntry.getKey(),facilityIntegerEntry.getValue() + 1);
@@ -49,14 +54,16 @@ public class BookingServiceImpl implements BookingService{
     }
 
     @Override
-    public void displayElement() {
+    public void displayElement() throws IOException {
+        bookingSet = (Set<Booking>) ReadAndWrite.read("D:\\A0321I1-HuynhBaDan\\modude2\\src\\case_study\\FuramaResort\\data\\Booking.csv");
         for (Booking booking : bookingSet){
-            System.out.println(booking);
-        }
+                System.out.println(booking);
+            }
     }
 
 
-    public int chooseCustomer(){
+    public int chooseCustomer() throws IOException {
+        CustomerServiceImpl.customerList = (List<Customer>) ReadAndWrite.read("D:\\A0321I1-HuynhBaDan\\modude2\\src\\case_study\\FuramaResort\\data\\Customer.csv");
         if (CustomerServiceImpl.customerList.size() == 0){
             System.out.println("chưa có khách hàng nào");
             FuramaController.displayMainMenu();
@@ -88,6 +95,7 @@ public class BookingServiceImpl implements BookingService{
         boolean check = true;
         while (check){
             System.out.println("vui lòng nhập tên dịch vụ: ");
+            scanner.nextLine();
             tenDichVu = scanner.nextLine();
             for (Facility facility : FacilityServiceImpl.facilityIntegerMap.keySet()){
                 if (tenDichVu.equals(facility.getTenDichvu())){

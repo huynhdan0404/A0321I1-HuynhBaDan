@@ -1,6 +1,8 @@
 package case_study.FuramaResort.models;
 
-public class Customer extends Person{
+import java.io.Serializable;
+
+public class Customer extends Person implements Serializable{
     private int maKhachHang;
     private String loaiKhach;
     private String diaChi;
@@ -22,7 +24,7 @@ public class Customer extends Person{
         this.diaChi = diaChi;
     }
 
-    public double getMaKhachHang() {
+    public int getMaKhachHang() {
         return maKhachHang;
     }
 

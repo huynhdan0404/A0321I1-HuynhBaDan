@@ -1,6 +1,8 @@
 package case_study.FuramaResort.models;
 
-public class Employee extends Person{
+import java.io.Serializable;
+
+public class Employee extends Person implements Serializable{
     private int maNhanVien;
     private String trinhDo;
     private String viTri;
@@ -25,7 +27,7 @@ public class Employee extends Person{
         this.luong = luong;
     }
 
-    public double getMaNhanVien() {
+    public int getMaNhanVien() {
         return maNhanVien;
     }
 
@@ -49,7 +51,7 @@ public class Employee extends Person{
         this.viTri = viTri;
     }
 
-    public double getLuong() {
+    public int getLuong() {
         return luong;
     }
 
@@ -63,7 +65,7 @@ public class Employee extends Person{
                 "maNhanVien=" + maNhanVien +
                 ", trinhDo='" + trinhDo + '\'' +
                 ", viTri='" + viTri + '\'' +
-                ", Luong=" + luong +
-                '}';
+                ", luong=" + luong +
+                "} " + super.toString();
     }
 }

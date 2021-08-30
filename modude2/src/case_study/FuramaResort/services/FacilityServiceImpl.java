@@ -4,8 +4,13 @@ import case_study.FuramaResort.models.Facility;
 import case_study.FuramaResort.models.House;
 import case_study.FuramaResort.models.Room;
 import case_study.FuramaResort.models.Villa;
+import case_study.FuramaResort.utils.ReadAndWrite;
+import case_study.FuramaResort.utils.ReadAndWriteMap;
 
+import java.io.IOException;
 import java.util.*;
+
+import static case_study.FuramaResort.utils.ReadAndWriteMap.read;
 
 public class FacilityServiceImpl implements FacilityService{
     private static int choice;
@@ -15,12 +20,14 @@ public class FacilityServiceImpl implements FacilityService{
 
     static {
         facilityIntegerMap = new HashMap<Facility,Integer>();
-        facilityIntegerMap.put(new Villa("Vila1",200,7000000,4,3,20,1),0);
-        facilityIntegerMap.put(new House("House1",100,5000000,4,3,1),0);
-        facilityIntegerMap.put(new Room("Rom1",70,3000000,4,"các dịch vụ kèm theo"),0);
+        try {
+            facilityIntegerMap = (Map<Facility, Integer>) read("D:\\A0321I1-HuynhBaDan\\modude2\\src\\case_study\\FuramaResort\\data\\Facility.csv");
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 
-    public void displayMenuFacility(){
+    public void displayMenuFacility() throws IOException {
         System.out.println("1. Display list facility");
         System.out.println("2. Add new facility");
         System.out.println("3. Display list facility maintenance");
@@ -104,6 +111,9 @@ public class FacilityServiceImpl implements FacilityService{
         villa.setSoTang(scanner.nextInt());
 
         facilityIntegerMap.put(villa,0);
+
+        ReadAndWriteMap.write(facilityIntegerMap,"D:\\A0321I1-HuynhBaDan\\modude2\\src\\case_study\\FuramaResort\\data\\Facility.csv");
+
     }
 
     public void addRoom(){
@@ -126,6 +136,7 @@ public class FacilityServiceImpl implements FacilityService{
         room.setSoNguoi(scanner.nextInt());
 
         facilityIntegerMap.put(room,0);
+        ReadAndWriteMap.write(facilityIntegerMap,"D:\\A0321I1-HuynhBaDan\\modude2\\src\\case_study\\FuramaResort\\data\\Facility.csv");
     }
 
     public void addHouse(){
@@ -151,14 +162,25 @@ public class FacilityServiceImpl implements FacilityService{
         house.setSoTang(scanner.nextInt());
 
         facilityIntegerMap.put(house,0);
+        ReadAndWriteMap.write(facilityIntegerMap,"D:\\A0321I1-HuynhBaDan\\modude2\\src\\case_study\\FuramaResort\\data\\Facility.csv");
     }
 
     @Override
-    public void facilityMaintenance() {
-        List<Facility> facilityList = new ArrayList<>();
+    public void facilityMaintenance() throws IOException {
+        List<Facility> maintenanceList = new ArrayList<>();
          for (Map.Entry entry : facilityIntegerMap.entrySet()){
              if ((int)entry.getValue() == 5){
-                 facilityList.add((Facility) entry.getKey());
+                 maintenanceList.add((Facility) entry.getKey());
+                 ReadAndWrite.write(maintenanceList,"D:\\A0321I1-HuynhBaDan\\modude2\\src\\case_study\\FuramaResort\\data\\FacilityMaintenance.csv");
+             }
+         }
+
+         ReadAndWrite.read("D:\\A0321I1-HuynhBaDan\\modude2\\src\\case_study\\FuramaResort\\data\\FacilityMaintenance.csv");
+         if (maintenanceList.size() == 0){
+             System.out.println("chưa có mục nào");
+         }else {
+             for (Facility element : maintenanceList){
+                 System.out.println(element);
              }
          }
     }

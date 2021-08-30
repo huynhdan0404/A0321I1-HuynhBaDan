@@ -1,6 +1,8 @@
 package case_study.FuramaResort.models;
 
-public class Contract {
+import java.io.Serializable;
+
+public class Contract implements Serializable {
     private int soHopDong;
     private int maBooking;
     private int soTienDatCoc;

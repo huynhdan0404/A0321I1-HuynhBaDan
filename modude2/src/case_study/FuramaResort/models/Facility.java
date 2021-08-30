@@ -1,6 +1,8 @@
 package case_study.FuramaResort.models;
 
-public class Facility {
+import java.io.Serializable;
+
+public class Facility implements Serializable {
     private String tenDichvu;
     private int dienTich;
     private int chiPhi;

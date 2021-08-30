@@ -1,6 +1,8 @@
 package case_study.FuramaResort.models;
 
-public class Booking {
+import java.io.Serializable;
+
+public class Booking implements Serializable {
     private int maBooking;
     private String ngayBatDau;
     private String ngayKetThuc;

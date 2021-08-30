@@ -1,6 +1,8 @@
 package case_study.FuramaResort.models;
 
-public abstract class Person {
+import java.io.Serializable;
+
+public abstract class Person implements Serializable {
     private String hoTen;
     private String ngaySinh;
     private String gioiTinh;
@@ -45,7 +47,7 @@ public abstract class Person {
         this.gioiTinh = gioiTinh;
     }
 
-    public double getSoCMND() {
+    public int getSoCMND() {
         return soCMND;
     }
 
@@ -53,7 +55,7 @@ public abstract class Person {
         this.soCMND = soCMND;
     }
 
-    public double getSoSDT() {
+    public int getSoSDT() {
         return soSDT;
     }
 

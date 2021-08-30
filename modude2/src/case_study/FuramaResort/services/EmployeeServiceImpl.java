@@ -2,7 +2,6 @@ package case_study.FuramaResort.services;
 
 import case_study.FuramaResort.models.Employee;
 import case_study.FuramaResort.utils.ReadAndWrite;
-import com.sun.scenario.effect.impl.state.AccessHelper;
 
 import java.io.IOException;
 import java.util.ArrayList;
@@ -49,7 +48,6 @@ public class EmployeeServiceImpl implements EmployeeService {
     @Override
     public void displayElement() throws IOException {
         employeeList = (List<Employee>) ReadAndWrite.read("D:\\A0321I1-HuynhBaDan\\modude2\\src\\case_study\\FuramaResort\\data\\Employee.csv");
-
         if (employeeList.size() == 0) {
             System.out.println("chưa có nhân viên nào, hãy thêm nhân viên của bạn vào");
         } else {
@@ -116,8 +114,9 @@ public class EmployeeServiceImpl implements EmployeeService {
     }
 
     @Override
-    public void exitEmployee() {
+    public void exitEmployee() throws IOException {
         int maNhanVien = 0;
+        employeeList = (List<Employee>) ReadAndWrite.read("D:\\A0321I1-HuynhBaDan\\modude2\\src\\case_study\\FuramaResort\\data\\Employee.csv");
         for (Employee element : employeeList){
             System.out.println(element);
         }
@@ -139,6 +138,7 @@ public class EmployeeServiceImpl implements EmployeeService {
                 }
             }
         }
+        ReadAndWrite.write(employeeList,"D:\\A0321I1-HuynhBaDan\\modude2\\src\\case_study\\FuramaResort\\data\\Employee.csv");
 
     }
 }

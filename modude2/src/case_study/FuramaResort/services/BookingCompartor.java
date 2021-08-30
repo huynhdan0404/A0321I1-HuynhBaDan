@@ -2,11 +2,12 @@ package case_study.FuramaResort.services;
 
 import case_study.FuramaResort.models.Booking;
 
+import java.io.Serializable;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 import java.util.Comparator;
 
-public class BookingCompartor implements Comparator<Booking> {
+public class BookingCompartor implements Comparator<Booking>, Serializable {
 
     @Override
     public int compare(Booking o1, Booking o2) {
@@ -26,7 +27,7 @@ public class BookingCompartor implements Comparator<Booking> {
             }else if (ngayKetThuc1.compareTo(ngayKetThuc2) < 0){
                 return -1;
             }else {
-                return 0;
+                return 1;
             }
         }
     }
